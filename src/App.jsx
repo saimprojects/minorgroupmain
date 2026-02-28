@@ -6,7 +6,7 @@ import Home from './pages/Home.jsx'
 import Services from './pages/Services.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
