@@ -14,9 +14,9 @@ export default function SectionTitle({
   light = false,
 }) {
   const alignClass = align === 'center' ? 'text-center mx-auto' : 'text-left'
-  const textColor = light ? 'text-white' : 'text-gray-900'
-  const subtitleColor = light ? 'text-gray-300' : 'text-gray-500'
-  const labelColor = light ? 'text-gray-400' : 'text-gray-500'
+  const textColor = light ? 'text-white' : 'text-sky-900'
+  const subtitleColor = light ? 'text-sky-200' : 'text-sky-600'
+  const labelColor = light ? 'text-sky-300' : 'text-sky-500'
 
   return (
     <div className={`max-w-2xl mb-12 ${alignClass}`}>

@@ -6,6 +6,7 @@
  * @param {string[]} items - optional bullet list items
  * @param {string} note - optional small note at bottom
  * @param {string} variant - 'default' | 'bordered' | 'dark'
+ * @param {string} className - additional classes
  */
 export default function Card({
   icon,
@@ -14,22 +15,23 @@ export default function Card({
   items = [],
   note,
   variant = 'default',
+  className = '',
 }) {
   const variants = {
-    default: 'bg-white border border-gray-100 shadow-sm hover:shadow-md',
-    bordered: 'bg-white border-2 border-gray-200 hover:border-gray-900',
-    dark: 'bg-gray-900 text-white border border-gray-800',
+    default: 'bg-white border border-sky-100 shadow-sm hover:shadow-md hover:border-sky-200',
+    bordered: 'bg-white border-2 border-sky-200 hover:border-sky-500',
+    dark: 'bg-sky-900 text-white border border-sky-800',
   }
 
-  const titleColor = variant === 'dark' ? 'text-white' : 'text-gray-900'
-  const descColor = variant === 'dark' ? 'text-gray-400' : 'text-gray-500'
-  const itemColor = variant === 'dark' ? 'text-gray-300' : 'text-gray-600'
-  const dotColor = variant === 'dark' ? 'bg-gray-600' : 'bg-gray-300'
+  const titleColor = variant === 'dark' ? 'text-white' : 'text-sky-900'
+  const descColor = variant === 'dark' ? 'text-sky-200' : 'text-sky-600'
+  const itemColor = variant === 'dark' ? 'text-sky-100' : 'text-sky-700'
+  const dotColor = variant === 'dark' ? 'bg-sky-400' : 'bg-sky-400'
 
   return (
-    <div className={`rounded-xl p-6 transition-all duration-200 ${variants[variant]}`}>
+    <div className={`rounded-xl p-6 transition-all duration-200 ${variants[variant]} ${className}`}>
       {icon && (
-        <div className="text-2xl mb-4">{icon}</div>
+        <div className="text-3xl mb-4">{icon}</div>
       )}
       <h3 className={`text-lg font-bold mb-2 ${titleColor}`}>{title}</h3>
       {description && (

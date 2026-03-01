@@ -58,18 +58,18 @@ export default function Home() {
   return (
     <div className="pt-16">
       {/* HERO */}
-      <section className="relative bg-gray-950 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-950 to-black opacity-90" />
+      <section className="relative bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-sky-950/50 via-sky-900/50 to-sky-800/50" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
           <div className="max-w-3xl">
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6 border border-gray-700 px-3 py-1 rounded-full">
+            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-sky-200 mb-6 border border-sky-400/30 px-3 py-1 rounded-full bg-sky-800/30 backdrop-blur-sm">
               Minor Group of Technologies
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               We Build Scalable Digital Systems That Drive{' '}
-              <span className="text-gray-300">Business Clarity</span>
+              <span className="text-sky-200">Business Clarity</span>
             </h1>
-            <p className="text-lg sm:text-xl text-gray-400 leading-relaxed mb-10 max-w-2xl">
+            <p className="text-lg sm:text-xl text-sky-100 leading-relaxed mb-10 max-w-2xl">
               Minor Group of Technologies is a product-focused technology company building SaaS platforms, management systems, and automation solutions designed to replace operational chaos with structured growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
         {/* Decorative grid */}
-        <div className="absolute inset-0 opacity-5 pointer-events-none"
+        <div className="absolute inset-0 opacity-10 pointer-events-none"
           style={{
             backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
             backgroundSize: '40px 40px'
@@ -101,7 +101,7 @@ export default function Home() {
                 title="Technology Built Around Business Structure"
                 align="left"
               />
-              <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="space-y-4 text-sky-700 leading-relaxed">
                 <p>
                   Minor Group of Technologies is a modern technology company focused on building structured, scalable, and performance-driven digital systems.
                 </p>
@@ -117,9 +117,9 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {stats.map((stat) => (
-                <div key={stat.label} className="bg-gray-50 rounded-xl p-6 text-center border border-gray-100">
-                  <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
-                  <div className="text-sm text-gray-500">{stat.label}</div>
+                <div key={stat.label} className="bg-sky-50 rounded-xl p-6 text-center border border-sky-100">
+                  <div className="text-3xl font-bold text-sky-900 mb-1">{stat.value}</div>
+                  <div className="text-sm text-sky-600">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -128,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* OUR MISSION */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-sky-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -139,8 +139,8 @@ export default function Home() {
               />
               <ul className="space-y-3 mb-8">
                 {missionPoints.map((point) => (
-                  <li key={point} className="flex items-center gap-3 text-gray-700">
-                    <span className="w-5 h-5 rounded-full bg-gray-900 flex items-center justify-center flex-shrink-0">
+                  <li key={point} className="flex items-center gap-3 text-sky-800">
+                    <span className="w-5 h-5 rounded-full bg-sky-500 flex items-center justify-center flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
@@ -149,21 +149,21 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <p className="text-gray-500 italic text-sm border-l-4 border-gray-900 pl-4">
+              <p className="text-sky-600 italic text-sm border-l-4 border-sky-500 pl-4">
                 "We build technology that strengthens structure."
               </p>
             </div>
-            <div className="bg-gray-900 rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-6">Why Minor Group of Technologies</h3>
+            <div className="bg-sky-900 rounded-2xl p-8 text-white">
+              <h3 className="text-xl font-bold mb-6 text-sky-100">Why Minor Group of Technologies</h3>
               <ul className="space-y-4">
                 {whyUs.map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 flex-shrink-0" />
-                    <span className="text-gray-300">{item}</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-sky-400 mt-2 flex-shrink-0" />
+                    <span className="text-sky-100">{item}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-8 text-gray-400 italic text-sm border-l-4 border-gray-600 pl-4">
+              <p className="mt-8 text-sky-300 italic text-sm border-l-4 border-sky-500 pl-4">
                 "We build for sustainability, not shortcuts."
               </p>
             </div>
@@ -194,23 +194,23 @@ export default function Home() {
       </section>
 
       {/* FEATURED PRODUCT — TAM */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-950 text-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-sky-900 to-sky-800 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4 block">
+              <span className="text-xs font-semibold uppercase tracking-widest text-sky-300 mb-4 block">
                 Featured Product
               </span>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">
                 TAM — Travel Agency Management
               </h2>
-              <p className="text-gray-400 leading-relaxed mb-6">
+              <p className="text-sky-100 leading-relaxed mb-6">
                 TAM is a specialized management platform built for travel agencies. It enables agency owners to operate with complete control while maintaining structured team workflows.
               </p>
               <div className="grid grid-cols-2 gap-3 mb-8">
                 {['Bookings', 'Client Records', 'Payments & Dues', 'Invoices & Receipts', 'Staff Roles', 'Performance Reports'].map((feature) => (
-                  <div key={feature} className="flex items-center gap-2 text-sm text-gray-300">
-                    <span className="w-1.5 h-1.5 rounded-full bg-gray-500 flex-shrink-0" />
+                  <div key={feature} className="flex items-center gap-2 text-sm text-sky-100">
+                    <span className="w-1.5 h-1.5 rounded-full bg-sky-400 flex-shrink-0" />
                     {feature}
                   </div>
                 ))}
@@ -219,16 +219,16 @@ export default function Home() {
                 Request TAM Demo
               </Button>
             </div>
-            <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+            <div className="bg-sky-950/50 rounded-2xl p-8 border border-sky-600/30 backdrop-blur-sm">
               <div className="text-4xl mb-4">✈️</div>
-              <h3 className="text-xl font-bold mb-3">Built for Travel Agencies</h3>
-              <p className="text-gray-400 text-sm leading-relaxed mb-6">
+              <h3 className="text-xl font-bold mb-3 text-white">Built for Travel Agencies</h3>
+              <p className="text-sky-200 text-sm leading-relaxed mb-6">
                 TAM centralizes every operational aspect of a travel agency — from the first client inquiry to the final payment reconciliation — into one structured, role-based platform.
               </p>
               <div className="space-y-3">
                 {['Multi-role access control', 'Real-time booking management', 'Automated invoice generation', 'Financial reporting dashboard'].map((f) => (
-                  <div key={f} className="flex items-center gap-2 text-sm text-gray-300">
-                    <svg className="w-4 h-4 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div key={f} className="flex items-center gap-2 text-sm text-sky-100">
+                    <svg className="w-4 h-4 text-sky-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     {f}
@@ -241,7 +241,7 @@ export default function Home() {
       </section>
 
       {/* IMPACT COUNTERS */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-sky-50">
         <div className="max-w-7xl mx-auto text-center">
           <SectionTitle
             label="Our Impact"
@@ -254,25 +254,25 @@ export default function Home() {
               { value: '10+', label: 'Industry Niches Served' },
               { value: '∞', label: 'System-Driven Approach' },
             ].map((stat) => (
-              <div key={stat.label} className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-                <div className="text-4xl font-bold text-gray-900 mb-2">{stat.value}</div>
-                <div className="text-sm text-gray-500 font-medium">{stat.label}</div>
+              <div key={stat.label} className="bg-white rounded-xl p-8 shadow-sm border border-sky-100">
+                <div className="text-4xl font-bold text-sky-900 mb-2">{stat.value}</div>
+                <div className="text-sm text-sky-600 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
-          <p className="mt-6 text-xs text-gray-400 italic">
+          <p className="mt-6 text-xs text-sky-500 italic">
             Numbers represent growing portfolio milestones.
           </p>
         </div>
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white text-center">
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-sky-900 to-sky-800 text-white text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-white">
             Ready to Transform Your Business Infrastructure?
           </h2>
-          <p className="text-gray-400 text-lg mb-10">
+          <p className="text-sky-100 text-lg mb-10">
             Let us design a structured digital system that drives clarity, eliminates chaos, and scales with your growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

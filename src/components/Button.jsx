@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 /**
  * Button component
- * @param {string} variant - 'primary' | 'secondary' | 'outline'
+ * @param {string} variant - 'primary' | 'secondary' | 'outline' | 'outline-white'
  * @param {string} to - internal route (renders as Link)
  * @param {string} href - external URL (renders as <a>)
  * @param {string} size - 'sm' | 'md' | 'lg'
@@ -25,10 +25,10 @@ export default function Button({
   }
 
   const variants = {
-    primary: 'bg-gray-900 text-white hover:bg-gray-700 focus:ring-gray-900',
-    secondary: 'bg-white text-gray-900 border border-gray-300 hover:bg-gray-50 focus:ring-gray-300',
-    outline: 'bg-transparent text-gray-900 border-2 border-gray-900 hover:bg-gray-900 hover:text-white focus:ring-gray-900',
-    'outline-white': 'bg-transparent text-white border-2 border-white hover:bg-white hover:text-gray-900 focus:ring-white',
+    primary: 'bg-sky-500 text-white hover:bg-sky-600 focus:ring-sky-500 shadow-md hover:shadow-lg',
+    secondary: 'bg-white text-sky-700 border border-sky-200 hover:bg-sky-50 focus:ring-sky-300',
+    outline: 'bg-transparent text-sky-700 border-2 border-sky-500 hover:bg-sky-500 hover:text-white focus:ring-sky-500',
+    'outline-white': 'bg-transparent text-white border-2 border-white hover:bg-white hover:text-sky-700 focus:ring-white',
   }
 
   const classes = `${base} ${sizes[size]} ${variants[variant]} ${className}`

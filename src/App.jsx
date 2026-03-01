@@ -8,6 +8,21 @@ import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import { Analytics } from "@vercel/analytics/react"
 
+// Services Linking -------------------
+
+import TAMService from './pages/Services/TAMService.jsx'
+import SaaSMVPDevelopment from './pages/Services/SaaSMVPDevelopment.jsx'
+import BusinessDashboardDevelopment from './pages/Services/BusinessDashboardDevelopment.jsx'
+import CompanyWebsiteDevelopment from './pages/Services/CompanyWebsiteDevelopment.jsx'
+import AutomationSystemIntegration from './pages/Services/AutomationSystemIntegration.jsx'
+import PrivacyPolicy from './pages/legal/PrivacyPolicy'
+import TermsOfService from './pages/legal/TermsOfService'
+import CookiePolicy from './pages/legal/CookiePolicy'
+import Disclaimer from './pages/legal/Disclaimer'
+import RefundPolicy from './pages/legal/RefundPolicy'
+import GlobalLegalHub from './pages/legal/GlobalLegalHub'
+
+//----------------------------------------
 function App() {
   return (
     <Router>
@@ -22,6 +37,25 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+
+
+            <Route path="/services/tam-system-development" element={<TAMService />} />
+            <Route path="/services/saas-mvp-development" element={<SaaSMVPDevelopment />} />
+            <Route path="/services/business-dashboard-development" element={<BusinessDashboardDevelopment />} />
+            <Route path="/services/company-website-development" element={<CompanyWebsiteDevelopment />} />
+            <Route path="/services/automation-system-integration" element={<AutomationSystemIntegration />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/cookies" element={<CookiePolicy />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
+            <Route path="/refund" element={<RefundPolicy />} />
+            <Route path="/legal" element={<GlobalLegalHub />} />
+
+
+
+
+
+
           </Routes>
         </main>
         <Footer />
