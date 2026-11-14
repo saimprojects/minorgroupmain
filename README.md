@@ -15,7 +15,7 @@ Deploy `dist/` using the supplied `vercel.json`. Run the full npm build command;
 
 Route metadata and structured data live in `src/seo/site.js`. The build and client navigation use the same renderer. When adding a public route, update App routing and SEO records together. The build generates the production sitemap from those records; the SEO regression checks confirm agreement.
 
-The preferred origin is `https://minorgroup.site`. Vercel configuration redirects only `www.minorgroup.site` to that origin. Confirm the hosting account has no opposite domain redirect before deploying.
+The preferred origin is `https://www.minorgroup.site`, matching the existing production hosting. Hostname redirects are managed in Vercel Domains; vercel.json intentionally defines no hostname redirect so static assets remain on the document origin. Keep a single apex-to-www redirect at the hosting level.
 
 See [the SEO audit](docs/SEO-AUDIT.md) and [test results](docs/seo-evidence/report.json). Local tests do not establish production indexing, real-user Core Web Vitals, or Search Console ownership.
 

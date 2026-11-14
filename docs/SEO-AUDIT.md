@@ -1,6 +1,6 @@
 # SEO audit and implementation notes
 
-Audit date: November 14, 2026. Scope: the local React/Vite frontend and its deployment configuration. Preferred production origin: `https://minorgroup.site`. Inner paths use no trailing slash.
+Audit date: November 14, 2026. Scope: the local React/Vite frontend and its deployment configuration. Preferred production origin: `https://www.minorgroup.site` (aligned to verified production hosting after the redirect-loop fix). Inner paths use no trailing slash.
 
 ## Findings and changes
 
@@ -9,7 +9,7 @@ Audit date: November 14, 2026. Scope: the local React/Vite frontend and its depl
 | High | Every route inherited a homepage canonical URL, description and social metadata. Page components changed only the browser title. | Central route metadata now produces unique titles, descriptions, canonicals and sharing tags in the initial HTML and on client navigation. Verified across all 15 routes. |
 | High | The initial HTML contained an empty React root. Search and social consumers had to execute JavaScript to obtain useful page content. | Build-time rendering now writes complete content for all 15 public routes. JavaScript-disabled content, navigation and the hydrated application were verified. |
 | High | A catch-all Vercel rewrite served the homepage for unknown paths; no real missing-page response was configured. | Removed that rewrite. The static build must emit `dist/404.html`; Vercel can use it for missing static routes. Added extensionless paths and consistent slash normalization. |
-| High | The canonical URL used the apex domain while robots and sitemap entries used `www`. | All crawl files now use the apex origin. Added a permanent redirect restricted to the `www.minorgroup.site` hostname. It preserves paths and does not target preview hostnames. Production domain configuration still needs verification. |
+| High | The canonical URL used the apex domain while robots and sitemap entries used `www`. | Canonical and crawl URLs now use the existing www production origin. The added www-to-apex source redirect was removed after live testing revealed an opposing apex-to-www hosting redirect. See routing-evidence/README.md. |
 | Medium | Sitemap repeated the homepage and About page, carried unused namespaces and repeated old modification dates. | Replaced it with 15 unique public URLs and a matching sitemap index. Omitted unsupported update estimates and dates without reliable per-page provenance. |
 | Medium | robots.txt carried `Host` and `Crawl-delay` directives that Google does not use, plus speculative restrictions. | Simplified to allow public content and reference the canonical sitemap. |
 | Medium | Head contained placeholder Search Console/Bing/Yandex/Pinterest/Facebook IDs, unverified social profiles and an unused SearchAction. | Removed these placeholders and unsupported claims from the centralized metadata. No search feature or account ownership is invented. |
@@ -20,7 +20,7 @@ Audit date: November 14, 2026. Scope: the local React/Vite frontend and its depl
 
 The updated crawl files parse as XML/text and contain exactly the 15 known public routes. `vercel.json` is valid JSON. The production build writes all 15 corresponding HTML files and a noindex 404 page; verified against a static production-output preview. A local dev server with SPA fallback is not evidence of production HTTP status behavior.
 
-The Vercel redirect rule is hostname-scoped, not a global redirect. Before deployment or domain activation, confirm Vercel's domain settings do not contain an opposite apex-to-www redirect. After deployment, test the homepage, a deep service route, a nonexistent path, `.html` normalization, slash normalization and www redirects using HTTP requests. Confirm the final status, Location header and canonical metadata agree.
+Hostname routing is managed by the existing Vercel Domains configuration. vercel.json intentionally has no hostname redirect, avoiding opposite redirect rules for static assets. After deployment, test the homepage, a deep service route, a nonexistent path, `.html` normalization, slash normalization and www redirects using HTTP requests. Confirm the final status, Location header and canonical metadata agree.
 
 ## What remains external
 
@@ -58,3 +58,4 @@ A static build can supply a `404.html` file for unmatched paths. See [Vercel cus
 - Prerendered text remains readable without JavaScript. Mobile navigation and the contact form retain usable non-JavaScript fallbacks.
 
 No Lighthouse score or field-performance result is inferred from these implementation checks.
+

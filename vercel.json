@@ -3,13 +3,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www\\.minorgroup\\.site" }],
-      "destination": "https://minorgroup.site/:path*",
-      "permanent": true
-    }
-  ]
+  "trailingSlash": false
 }

@@ -1,6 +1,6 @@
 import { company } from '../data/company.js'
 import { posts } from '../data/blog.js'
-export const siteUrl = 'https://minorgroup.site'
+export const siteUrl = 'https://www.minorgroup.site'
 export const siteName = 'Minor Group of Technologies'
 
 const logoUrl = `${siteUrl}/brand/minor-group-logo-porcelain.png`

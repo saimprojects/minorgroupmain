@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://minorgroup.site/sitemap.xml
+Sitemap: https://www.minorgroup.site/sitemap.xml

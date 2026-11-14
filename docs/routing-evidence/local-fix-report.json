@@ -1,0 +1,24 @@
+{
+  "canonicalPages": 18,
+  "domain": "https://www.minorgroup.site",
+  "assets": [
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BkHjO4gL.css",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-DE0y04VR.js",
+      "status": 200,
+      "redirected": false
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/scrollcraft-D3PtjzOU.js",
+      "status": 200,
+      "redirected": false
+    }
+  ],
+  "errors": [],
+  "icons": "200 without redirects",
+  "liveDeployment": "pending"
+}
