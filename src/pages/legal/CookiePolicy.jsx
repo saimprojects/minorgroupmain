@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import SectionTitle from '../../components/SectionTitle.jsx'
 
 export default function CookiePolicy() {
   useEffect(() => {
@@ -32,41 +31,21 @@ export default function CookiePolicy() {
   }
 
   return (
-    <div className="pt-16">
+    <div className="legal-page">
       {/* HERO SECTION */}
-      <section className="relative bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 text-white overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-sky-400 rounded-full filter blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-sky-300 rounded-full filter blur-3xl"></div>
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Breadcrumb */}
-            <div className="flex items-center justify-center gap-2 text-sm text-sky-200 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <span>/</span>
-              <Link to="/legal" className="hover:text-white transition-colors">Legal</Link>
-              <span>/</span>
-              <span className="text-white">Cookie Policy</span>
-            </div>
-
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-sky-200 mb-4 border border-sky-400/30 px-3 py-1 rounded-full bg-sky-800/30 backdrop-blur-sm">
-              Your Privacy Matters
-            </span>
-            
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">Cookie Policy</h1>
-            <p className="text-xl text-sky-100">Last Updated: {lastUpdated}</p>
-          </div>
-        </div>
+      <section className="legal-hero shell">
+        <nav className="detail-breadcrumb" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><Link to="/legal">Legal</Link><span aria-hidden="true">/</span><span aria-current="page">Cookie Policy</span></nav>
+        <p className="page-kicker">Your Privacy Matters</p>
+        <h1 className="page-title">Cookie Policy</h1>
+        
+        <p className="legal-date">Last Updated: {lastUpdated}</p>
       </section>
 
       {/* CONTENT SECTION */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           {/* Last Updated Badge */}
-          <div className="bg-sky-50 rounded-xl p-4 mb-8 border border-sky-100 flex items-center gap-3">
+          <div className="bg-sky-50 rounded-none p-4 mb-8 border border-sky-100 flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -90,7 +69,7 @@ export default function CookiePolicy() {
           </div>
 
           {/* Table of Contents */}
-          <div className="bg-sky-50 rounded-xl p-6 my-8 border border-sky-100">
+          <div className="bg-sky-50 rounded-none p-6 my-8 border border-sky-100">
             <h2 className="text-lg font-bold text-sky-900 mb-3 flex items-center gap-2">
               <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
@@ -124,7 +103,7 @@ export default function CookiePolicy() {
           </div>
 
           {/* Cookie Preference Center */}
-          <div className="bg-gradient-to-br from-sky-50 to-white rounded-xl p-6 mb-10 border border-sky-200 shadow-md">
+          <div className="bg-sky-50 rounded-none p-6 mb-10 border border-sky-200 ">
             <h2 className="text-xl font-bold text-sky-900 mb-4 flex items-center gap-2">
               <svg className="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
@@ -137,7 +116,7 @@ export default function CookiePolicy() {
 
             <div className="space-y-3 mb-6">
               {/* Essential Cookies */}
-              <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-sky-100">
+              <div className="flex items-center justify-between p-3 bg-white rounded-none border border-sky-100">
                 <div>
                   <h3 className="font-semibold text-sky-900">Essential Cookies</h3>
                   <p className="text-xs text-sky-600">Required for basic site functionality</p>
@@ -151,14 +130,14 @@ export default function CookiePolicy() {
               </div>
 
               {/* Analytics Cookies */}
-              <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-sky-100">
+              <div className="flex items-center justify-between p-3 bg-white rounded-none border border-sky-100">
                 <div>
                   <h3 className="font-semibold text-sky-900">Analytics Cookies</h3>
                   <p className="text-xs text-sky-600">Help us understand how visitors use our site</p>
                 </div>
                 <button 
                   onClick={() => handlePreferenceChange('analytics')}
-                  className={`w-10 h-6 rounded-full flex items-center transition-all duration-200 ${
+                  className={`w-10 h-6 rounded-full flex items-center transition-colors duration-200 ${
                     cookiePreferences.analytics ? 'bg-sky-500 justify-end' : 'bg-gray-300 justify-start'
                   }`}
                 >
@@ -167,14 +146,14 @@ export default function CookiePolicy() {
               </div>
 
               {/* Functional Cookies */}
-              <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-sky-100">
+              <div className="flex items-center justify-between p-3 bg-white rounded-none border border-sky-100">
                 <div>
                   <h3 className="font-semibold text-sky-900">Functional Cookies</h3>
                   <p className="text-xs text-sky-600">Remember your preferences and settings</p>
                 </div>
                 <button 
                   onClick={() => handlePreferenceChange('functional')}
-                  className={`w-10 h-6 rounded-full flex items-center transition-all duration-200 ${
+                  className={`w-10 h-6 rounded-full flex items-center transition-colors duration-200 ${
                     cookiePreferences.functional ? 'bg-sky-500 justify-end' : 'bg-gray-300 justify-start'
                   }`}
                 >
@@ -183,14 +162,14 @@ export default function CookiePolicy() {
               </div>
 
               {/* Marketing Cookies */}
-              <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-sky-100">
+              <div className="flex items-center justify-between p-3 bg-white rounded-none border border-sky-100">
                 <div>
                   <h3 className="font-semibold text-sky-900">Marketing Cookies</h3>
                   <p className="text-xs text-sky-600">Used to deliver relevant advertisements</p>
                 </div>
                 <button 
                   onClick={() => handlePreferenceChange('marketing')}
-                  className={`w-10 h-6 rounded-full flex items-center transition-all duration-200 ${
+                  className={`w-10 h-6 rounded-full flex items-center transition-colors duration-200 ${
                     cookiePreferences.marketing ? 'bg-sky-500 justify-end' : 'bg-gray-300 justify-start'
                   }`}
                 >
@@ -201,7 +180,7 @@ export default function CookiePolicy() {
 
             <button
               onClick={savePreferences}
-              className="w-full bg-sky-600 text-white py-2.5 rounded-lg font-semibold text-sm hover:bg-sky-700 transition-colors"
+              className="w-full bg-sky-600 text-white py-2.5 rounded-none font-semibold text-sm hover:bg-sky-700 transition-colors"
             >
               Save My Preferences
             </button>
@@ -239,26 +218,26 @@ export default function CookiePolicy() {
                 
                 <div className="grid gap-4 mt-4">
                   {/* Essential */}
-                  <div className="bg-sky-50 p-4 rounded-lg border border-sky-100">
-                    <h3 className="font-semibold text-sky-900 mb-2">🔐 Essential Cookies</h3>
+                  <div className="bg-sky-50 p-4 rounded-none border border-sky-100">
+                    <h3 className="font-semibold text-sky-900 mb-2"> Essential Cookies</h3>
                     <p className="text-sm text-sky-700">These cookies are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility.</p>
                   </div>
 
                   {/* Analytics */}
-                  <div className="bg-sky-50 p-4 rounded-lg border border-sky-100">
-                    <h3 className="font-semibold text-sky-900 mb-2">📊 Analytics Cookies</h3>
+                  <div className="bg-sky-50 p-4 rounded-none border border-sky-100">
+                    <h3 className="font-semibold text-sky-900 mb-2"> Analytics Cookies</h3>
                     <p className="text-sm text-sky-700">These cookies help us understand how visitors interact with our website by collecting anonymous information about pages visited, time spent, and error messages.</p>
                   </div>
 
                   {/* Functional */}
-                  <div className="bg-sky-50 p-4 rounded-lg border border-sky-100">
-                    <h3 className="font-semibold text-sky-900 mb-2">⚙️ Functional Cookies</h3>
+                  <div className="bg-sky-50 p-4 rounded-none border border-sky-100">
+                    <h3 className="font-semibold text-sky-900 mb-2"> Functional Cookies</h3>
                     <p className="text-sm text-sky-700">These cookies remember your preferences and choices to provide enhanced, personalized features.</p>
                   </div>
 
                   {/* Marketing */}
-                  <div className="bg-sky-50 p-4 rounded-lg border border-sky-100">
-                    <h3 className="font-semibold text-sky-900 mb-2">🎯 Marketing Cookies</h3>
+                  <div className="bg-sky-50 p-4 rounded-none border border-sky-100">
+                    <h3 className="font-semibold text-sky-900 mb-2"> Marketing Cookies</h3>
                     <p className="text-sm text-sky-700">These cookies track your browsing habits to deliver advertisements relevant to you and measure the effectiveness of advertising campaigns.</p>
                   </div>
                 </div>
@@ -273,7 +252,7 @@ export default function CookiePolicy() {
               </h2>
               <div className="ml-11">
                 <div className="overflow-x-auto">
-                  <table className="min-w-full bg-white border border-sky-100 rounded-xl">
+                  <table className="min-w-full bg-white border border-sky-100 rounded-none">
                     <thead>
                       <tr className="bg-sky-50">
                         <th className="px-4 py-3 text-left text-xs font-semibold text-sky-900">Cookie Name</th>
@@ -300,9 +279,9 @@ export default function CookiePolicy() {
                           <td className="px-4 py-2">
                             <span className={`text-xs px-2 py-1 rounded-full ${
                               cookie.type === 'Essential' ? 'bg-sky-100 text-sky-700' :
-                              cookie.type === 'Analytics' ? 'bg-green-100 text-green-700' :
-                              cookie.type === 'Functional' ? 'bg-purple-100 text-purple-700' :
-                              'bg-yellow-100 text-yellow-700'
+                              cookie.type === 'Analytics' ? 'bg-sky-100 text-sky-700' :
+                              cookie.type === 'Functional' ? 'bg-sky-100 text-sky-700' :
+                              'bg-sky-100 text-sky-700'
                             }`}>
                               {cookie.type}
                             </span>
@@ -367,7 +346,7 @@ export default function CookiePolicy() {
                       href={browser.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-between p-3 bg-sky-50 rounded-lg border border-sky-100 hover:bg-sky-100 transition-colors"
+                      className="flex items-center justify-between p-3 bg-sky-50 rounded-none border border-sky-100 hover:bg-sky-100 transition-colors"
                     >
                       <span className="text-sm font-medium text-sky-800">{browser.browser}</span>
                       <svg className="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -387,9 +366,9 @@ export default function CookiePolicy() {
               </h2>
               <div className="ml-11 space-y-4 text-sky-700">
                 <p>You can disable cookies by activating the setting on your browser that allows you to refuse all or some cookies. However, if you disable cookies, you may not be able to access all or parts of our website.</p>
-                <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
-                  <p className="text-sm text-yellow-800 flex items-start gap-2">
-                    <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-sky-50 p-4 rounded-none border border-sky-200">
+                  <p className="text-sm text-sky-800 flex items-start gap-2">
+                    <svg className="w-5 h-5 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
                     <span><span className="font-semibold">Important:</span> Disabling essential cookies may impact website functionality, such as the ability to log in or complete forms.</span>
@@ -419,7 +398,7 @@ export default function CookiePolicy() {
               <div className="ml-11 space-y-6 text-sky-700">
                 <p>If you have any questions about our use of cookies, please contact us:</p>
                 
-                <div className="bg-sky-50 rounded-xl p-6 border border-sky-100">
+                <div className="bg-sky-50 rounded-none p-6 border border-sky-100">
                   <h3 className="font-bold text-sky-900 mb-3">Minor Group of Technologies</h3>
                   <div className="space-y-2 text-sm">
                     <p className="flex items-center gap-2">
@@ -442,7 +421,7 @@ export default function CookiePolicy() {
           </div>
 
           {/* Acknowledgment Section */}
-          <div className="mt-12 p-6 bg-sky-50 rounded-xl border border-sky-100 text-center">
+          <div className="mt-12 p-6 bg-sky-50 rounded-none border border-sky-100 text-center">
             <p className="text-sm text-sky-700">
               By continuing to use our website, you consent to our use of cookies as described in this policy.
             </p>
@@ -457,13 +436,13 @@ export default function CookiePolicy() {
                   })
                   savePreferences()
                 }}
-                className="inline-flex items-center gap-1 text-sm bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition-colors"
+                className="inline-flex items-center gap-1 text-sm bg-sky-600 text-white px-4 py-2 rounded-none hover:bg-sky-700 transition-colors"
               >
                 Accept All Cookies
               </button>
               <Link 
                 to="/privacy" 
-                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-lg hover:bg-sky-100 transition-colors"
+                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-none hover:bg-sky-100 transition-colors"
               >
                 View Privacy Policy
               </Link>

@@ -10,41 +10,21 @@ export default function Disclaimer() {
   const lastUpdated = 'March 1, 2026'
 
   return (
-    <div className="pt-16">
+    <div className="legal-page">
       {/* HERO SECTION */}
-      <section className="relative bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 text-white overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-sky-400 rounded-full filter blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-sky-300 rounded-full filter blur-3xl"></div>
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Breadcrumb */}
-            <div className="flex items-center justify-center gap-2 text-sm text-sky-200 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <span>/</span>
-              <Link to="/legal" className="hover:text-white transition-colors">Legal</Link>
-              <span>/</span>
-              <span className="text-white">Disclaimer</span>
-            </div>
-
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-sky-200 mb-4 border border-sky-400/30 px-3 py-1 rounded-full bg-sky-800/30 backdrop-blur-sm">
-              Legal Notice
-            </span>
-            
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">Disclaimer</h1>
-            <p className="text-xl text-sky-100">Last Updated: {lastUpdated}</p>
-          </div>
-        </div>
+      <section className="legal-hero shell">
+        <nav className="detail-breadcrumb" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><Link to="/legal">Legal</Link><span aria-hidden="true">/</span><span aria-current="page">Disclaimer</span></nav>
+        <p className="page-kicker">Legal Notice</p>
+        <h1 className="page-title">Disclaimer</h1>
+        
+        <p className="legal-date">Last Updated: {lastUpdated}</p>
       </section>
 
       {/* CONTENT SECTION */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           {/* Last Updated Badge */}
-          <div className="bg-sky-50 rounded-xl p-4 mb-8 border border-sky-100 flex items-center gap-3">
+          <div className="bg-sky-50 rounded-none p-4 mb-8 border border-sky-100 flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -69,7 +49,7 @@ export default function Disclaimer() {
           </div>
 
           {/* Table of Contents */}
-          <div className="bg-sky-50 rounded-xl p-6 my-8 border border-sky-100">
+          <div className="bg-sky-50 rounded-none p-6 my-8 border border-sky-100">
             <h2 className="text-lg font-bold text-sky-900 mb-3 flex items-center gap-2">
               <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
@@ -124,9 +104,9 @@ export default function Disclaimer() {
               <div className="ml-11 space-y-4 text-sky-700">
                 <p>The website cannot and does not contain professional advice. The information is provided for general informational and educational purposes only and is not a substitute for professional advice.</p>
                 <p>Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of professional advice.</p>
-                <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200 mt-3">
-                  <p className="text-sm text-yellow-800 flex items-start gap-2">
-                    <svg className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-sky-50 p-4 rounded-none border border-sky-200 mt-3">
+                  <p className="text-sm text-sky-800 flex items-start gap-2">
+                    <svg className="w-5 h-5 text-sky-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
                     <span><span className="font-semibold">Important:</span> Our software development services are technical in nature and should not be considered legal, financial, or business advice.</span>
@@ -240,7 +220,7 @@ export default function Disclaimer() {
               <div className="ml-11 space-y-6 text-sky-700">
                 <p>If you have any questions about this Disclaimer, please contact us:</p>
                 
-                <div className="bg-sky-50 rounded-xl p-6 border border-sky-100">
+                <div className="bg-sky-50 rounded-none p-6 border border-sky-100">
                   <h3 className="font-bold text-sky-900 mb-3">Minor Group of Technologies</h3>
                   <div className="space-y-2 text-sm">
                     <p className="flex items-center gap-2">
@@ -263,14 +243,14 @@ export default function Disclaimer() {
           </div>
 
           {/* Acknowledgment Section */}
-          <div className="mt-12 p-6 bg-sky-50 rounded-xl border border-sky-100 text-center">
+          <div className="mt-12 p-6 bg-sky-50 rounded-none border border-sky-100 text-center">
             <p className="text-sm text-sky-700">
               By using our website and services, you acknowledge that you have read and understood this Disclaimer.
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               <Link 
                 to="/contact" 
-                className="inline-flex items-center gap-1 text-sm bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition-colors"
+                className="inline-flex items-center gap-1 text-sm bg-sky-600 text-white px-4 py-2 rounded-none hover:bg-sky-700 transition-colors"
               >
                 Contact Us
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -279,7 +259,7 @@ export default function Disclaimer() {
               </Link>
               <Link 
                 to="/terms" 
-                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-lg hover:bg-sky-100 transition-colors"
+                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-none hover:bg-sky-100 transition-colors"
               >
                 View Terms of Service
               </Link>

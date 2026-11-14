@@ -1,0 +1,30 @@
+[
+  {
+    "menuExpanded": "true"
+  },
+  {
+    "escapeCloses": "false",
+    "focus": "Open navigation"
+  },
+  {
+    "routeChangeClosesMenu": "false",
+    "engineCleaned": true
+  },
+  {
+    "mockFormError": "Verification response: try again.\n\nYou can also email us directly.",
+    "focus": "form-error",
+    "mobileInputFont": "16px"
+  },
+  {
+    "pointerPlanesChange": true
+  },
+  {
+    "connection": "connection:100"
+  },
+  {
+    "replayRuns": true
+  },
+  {
+    "skipLinkVisible": "skip-link"
+  }
+]

@@ -1,7 +1,1 @@
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
+export default {content:['./index.html','./src/**/*.{js,ts,jsx,tsx}'],theme:{extend:{colors:{sky:{50:'#f4f3f0',100:'#e7e6e2',200:'#d4d3d0',300:'#b9b8b5',400:'#8c8d91',500:'#6b6c70',600:'#55565a',700:'#414246',800:'#2b2c30',900:'#18191b',950:'#121315'}}}},plugins:[]}

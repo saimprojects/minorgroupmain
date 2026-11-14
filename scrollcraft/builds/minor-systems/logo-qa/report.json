@@ -1,0 +1,74 @@
+[
+  {
+    "viewport": 1440,
+    "overflow": false,
+    "images": [
+      {
+        "source": "/brand/minor-group-logo-porcelain.png",
+        "loaded": true,
+        "width": 228,
+        "height": 76
+      },
+      {
+        "source": "/brand/minor-group-logo-porcelain.png",
+        "loaded": true,
+        "width": 340,
+        "height": 113
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "overflow": false,
+    "images": [
+      {
+        "source": "/brand/minor-group-logo-porcelain.png",
+        "loaded": true,
+        "width": 228,
+        "height": 76
+      },
+      {
+        "source": "/brand/minor-group-logo-porcelain.png",
+        "loaded": true,
+        "width": 340,
+        "height": 113
+      }
+    ]
+  },
+  {
+    "viewport": 390,
+    "overflow": false,
+    "images": [
+      {
+        "source": "/brand/minor-group-logo-porcelain.png",
+        "loaded": true,
+        "width": 186,
+        "height": 62
+      },
+      {
+        "source": "/brand/minor-group-logo-porcelain.png",
+        "loaded": true,
+        "width": 280,
+        "height": 93
+      }
+    ]
+  },
+  {
+    "viewport": 360,
+    "overflow": false,
+    "images": [
+      {
+        "source": "/brand/minor-group-logo-porcelain.png",
+        "loaded": true,
+        "width": 186,
+        "height": 62
+      },
+      {
+        "source": "/brand/minor-group-logo-porcelain.png",
+        "loaded": true,
+        "width": 280,
+        "height": 93
+      }
+    ]
+  }
+]

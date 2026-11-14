@@ -16,74 +16,54 @@ export default function RefundPolicy() {
       timeline: 'Within 3 business days of deposit',
       refund: '100% refund',
       description: 'If you change your mind before any work has begun, you are eligible for a full refund of your deposit.',
-      icon: '✅'
+      icon: ''
     },
     {
       title: 'During Discovery Phase',
       timeline: 'After work has started, before design phase',
       refund: '75% refund',
       description: 'If we have begun requirements gathering but no design work has been started.',
-      icon: '🔄'
+      icon: ''
     },
     {
       title: 'During Design Phase',
       timeline: 'After design work has begun',
       refund: '50% refund',
       description: 'If design concepts have been presented and work has started on the visual direction.',
-      icon: '🎨'
+      icon: ''
     },
     {
       title: 'During Development',
       timeline: 'After development has started',
       refund: 'Partial (work not yet completed)',
       description: 'Refund calculated based on percentage of work not yet delivered.',
-      icon: '⚙️'
+      icon: ''
     },
     {
       title: 'After Delivery',
       timeline: 'Project completed and delivered',
       refund: 'No refund',
       description: 'Once the project is completed and delivered according to specifications.',
-      icon: '📦'
+      icon: ''
     }
   ]
 
   return (
-    <div className="pt-16">
+    <div className="legal-page">
       {/* HERO SECTION */}
-      <section className="relative bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 text-white overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-sky-400 rounded-full filter blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-sky-300 rounded-full filter blur-3xl"></div>
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Breadcrumb */}
-            <div className="flex items-center justify-center gap-2 text-sm text-sky-200 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <span>/</span>
-              <Link to="/legal" className="hover:text-white transition-colors">Legal</Link>
-              <span>/</span>
-              <span className="text-white">Refund Policy</span>
-            </div>
-
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-sky-200 mb-4 border border-sky-400/30 px-3 py-1 rounded-full bg-sky-800/30 backdrop-blur-sm">
-              Money-Back Guarantee
-            </span>
-            
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">Refund Policy</h1>
-            <p className="text-xl text-sky-100">Last Updated: {lastUpdated}</p>
-          </div>
-        </div>
+      <section className="legal-hero shell">
+        <nav className="detail-breadcrumb" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><Link to="/legal">Legal</Link><span aria-hidden="true">/</span><span aria-current="page">Refund Policy</span></nav>
+        <p className="page-kicker">Money-Back Guarantee</p>
+        <h1 className="page-title">Refund Policy</h1>
+        
+        <p className="legal-date">Last Updated: {lastUpdated}</p>
       </section>
 
       {/* CONTENT SECTION */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           {/* Last Updated Badge */}
-          <div className="bg-sky-50 rounded-xl p-4 mb-8 border border-sky-100 flex items-center gap-3">
+          <div className="bg-sky-50 rounded-none p-4 mb-8 border border-sky-100 flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -109,11 +89,11 @@ export default function RefundPolicy() {
           {/* Quick Summary Cards */}
           <div className="grid sm:grid-cols-3 gap-4 my-8">
             {[
-              { label: 'Money-Back Period', value: '3 Days', icon: '⏱️', desc: 'Full refund within 3 days' },
-              { label: 'Processing Time', value: '5-10 Days', icon: '📅', desc: 'Refund processing time' },
+              { label: 'Money-Back Period', value: '3 Days', icon: '⏱', desc: 'Full refund within 3 days' },
+              { label: 'Processing Time', value: '5-10 Days', icon: '', desc: 'Refund processing time' },
               { label: 'Satisfaction', value: '100%', icon: '⭐', desc: 'We want you happy' },
             ].map((item, index) => (
-              <div key={index} className="bg-sky-50 rounded-xl p-4 text-center border border-sky-100">
+              <div key={index} className="bg-sky-50 rounded-none p-4 text-center border border-sky-100">
                 <div className="text-2xl mb-2">{item.icon}</div>
                 <div className="text-lg font-bold text-sky-900">{item.value}</div>
                 <div className="text-xs text-sky-600">{item.label}</div>
@@ -123,7 +103,7 @@ export default function RefundPolicy() {
           </div>
 
           {/* Table of Contents */}
-          <div className="bg-sky-50 rounded-xl p-6 my-8 border border-sky-100">
+          <div className="bg-sky-50 rounded-none p-6 my-8 border border-sky-100">
             <h2 className="text-lg font-bold text-sky-900 mb-3 flex items-center gap-2">
               <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
@@ -163,7 +143,7 @@ export default function RefundPolicy() {
               Refund Scenarios at a Glance
             </h2>
             <div className="overflow-x-auto">
-              <table className="min-w-full bg-white border border-sky-100 rounded-xl">
+              <table className="min-w-full bg-white border border-sky-100 rounded-none">
                 <thead>
                   <tr className="bg-sky-50">
                     <th className="px-4 py-3 text-left text-xs font-semibold text-sky-900">Scenario</th>
@@ -184,11 +164,11 @@ export default function RefundPolicy() {
                       <td className="px-4 py-3 text-sm text-sky-700">{scenario.timeline}</td>
                       <td className="px-4 py-3">
                         <span className={`text-xs px-2 py-1 rounded-full ${
-                          scenario.refund.includes('100%') ? 'bg-green-100 text-green-700' :
-                          scenario.refund.includes('75%') ? 'bg-blue-100 text-blue-700' :
-                          scenario.refund.includes('50%') ? 'bg-yellow-100 text-yellow-700' :
-                          scenario.refund.includes('Partial') ? 'bg-orange-100 text-orange-700' :
-                          'bg-red-100 text-red-700'
+                          scenario.refund.includes('100%') ? 'bg-sky-100 text-sky-700' :
+                          scenario.refund.includes('75%') ? 'bg-sky-100 text-sky-700' :
+                          scenario.refund.includes('50%') ? 'bg-sky-100 text-sky-700' :
+                          scenario.refund.includes('Partial') ? 'bg-sky-100 text-sky-700' :
+                          'bg-sky-100 text-sky-700'
                         }`}>
                           {scenario.refund}
                         </span>
@@ -235,7 +215,7 @@ export default function RefundPolicy() {
                   <li>Third-party costs (licenses, APIs, hosting) already paid are non-refundable</li>
                   <li>Refunds are calculated as: (Total project cost - (hours worked × hourly rate) - third-party costs)</li>
                 </ul>
-                <div className="bg-sky-50 p-4 rounded-lg mt-3">
+                <div className="bg-sky-50 p-4 rounded-none mt-3">
                   <p className="text-sm">
                     <span className="font-semibold">Example:</span> If your project costs $5,000, we've completed 20 hours of work at $75/hour ($1,500), and paid $200 in third-party fees, your refund would be $3,300.
                   </p>
@@ -277,8 +257,8 @@ export default function RefundPolicy() {
                     'Consultation calls conducted',
                     'Deposits for started projects (partial)'
                   ].map((item, index) => (
-                    <div key={index} className="flex items-center gap-2 text-sm text-sky-700 bg-sky-50 p-3 rounded-lg">
-                      <svg className="w-4 h-4 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div key={index} className="flex items-center gap-2 text-sm text-sky-700 bg-sky-50 p-3 rounded-none">
+                      <svg className="w-4 h-4 text-sky-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                       </svg>
                       {item}
@@ -330,9 +310,9 @@ export default function RefundPolicy() {
                   <li>Bank processing times may add 3-5 additional business days</li>
                   <li>You will receive a confirmation email once the refund is processed</li>
                 </ul>
-                <div className="bg-green-50 p-4 rounded-lg border border-green-200 mt-3">
-                  <p className="text-sm text-green-800 flex items-start gap-2">
-                    <svg className="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-sky-50 p-4 rounded-none border border-sky-200 mt-3">
+                  <p className="text-sm text-sky-800 flex items-start gap-2">
+                    <svg className="w-5 h-5 text-sky-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span><span className="font-semibold">Note:</span> International payments may take longer to process due to banking regulations.</span>
@@ -396,7 +376,7 @@ export default function RefundPolicy() {
               <div className="ml-11 space-y-6 text-sky-700">
                 <p>If you have any questions about our Refund Policy, please contact us:</p>
                 
-                <div className="bg-sky-50 rounded-xl p-6 border border-sky-100">
+                <div className="bg-sky-50 rounded-none p-6 border border-sky-100">
                   <h3 className="font-bold text-sky-900 mb-3">Minor Group of Technologies</h3>
                   <div className="space-y-2 text-sm">
                     <p className="flex items-center gap-2">
@@ -425,14 +405,14 @@ export default function RefundPolicy() {
           </div>
 
           {/* Acknowledgment Section */}
-          <div className="mt-12 p-6 bg-sky-50 rounded-xl border border-sky-100 text-center">
+          <div className="mt-12 p-6 bg-sky-50 rounded-none border border-sky-100 text-center">
             <p className="text-sm text-sky-700">
               By making a payment for our services, you acknowledge that you have read, understood, and agree to this Refund Policy.
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               <Link 
                 to="/contact" 
-                className="inline-flex items-center gap-1 text-sm bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition-colors"
+                className="inline-flex items-center gap-1 text-sm bg-sky-600 text-white px-4 py-2 rounded-none hover:bg-sky-700 transition-colors"
               >
                 Contact Us
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -441,7 +421,7 @@ export default function RefundPolicy() {
               </Link>
               <Link 
                 to="/terms" 
-                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-lg hover:bg-sky-100 transition-colors"
+                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-none hover:bg-sky-100 transition-colors"
               >
                 View Terms of Service
               </Link>

@@ -1,0 +1,967 @@
+{
+  "doc": {
+    "height": 5154,
+    "vh": 844,
+    "acts": [
+      "flow",
+      "flow",
+      "pin",
+      "flow",
+      "flow",
+      "flow"
+    ],
+    "world": null
+  },
+  "report": [
+    {
+      "i": 0,
+      "y": 0,
+      "pct": 0,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Your business is connected.Your software",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "Your business is connected.Your software shoul",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        949
+      ],
+      "segs": [],
+      "custom": [
+        "connection:0"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 1,
+      "y": 41,
+      "pct": 1,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Your business is connected.Your software",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "Your business is connected.Your software shoul",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        938
+      ],
+      "segs": [],
+      "custom": [
+        "connection:0"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 2,
+      "y": 228,
+      "pct": 5,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Your business is connected.Your software",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "Your business is connected.Your software shoul",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        751
+      ],
+      "segs": [],
+      "custom": [
+        "connection:0"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 3,
+      "y": 299,
+      "pct": 7,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Your business is connected.Your software",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "Your business is connected.Your software shoul",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        680
+      ],
+      "segs": [],
+      "custom": [
+        "connection:0"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 4,
+      "y": 461,
+      "pct": 11,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Your business is connected.Your software",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "Your business is connected.Your software shoul",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        518
+      ],
+      "segs": [],
+      "custom": [
+        "connection:0"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 5,
+      "y": 557,
+      "pct": 13,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Your business is connected.Your software",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "Your business is connected.Your software shoul",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        422
+      ],
+      "segs": [],
+      "custom": [
+        "connection:0"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 6,
+      "y": 693,
+      "pct": 16,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Your business is connected.Your software",
+          "dir": "light-on-dark",
+          "worst": 15.85,
+          "mean": 15.85
+        }
+      ],
+      "cues": [
+        {
+          "t": "Your business is connected.Your software shoul",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        286
+      ],
+      "segs": [],
+      "custom": [
+        "connection:0"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 7,
+      "y": 925,
+      "pct": 21,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        54
+      ],
+      "segs": [],
+      "custom": [
+        "connection:0"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 8,
+      "y": 969,
+      "pct": 22,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        10
+      ],
+      "segs": [],
+      "custom": [
+        "connection:3"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 9,
+      "y": 1164,
+      "pct": 27,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "connection:27"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 10,
+      "y": 1358,
+      "pct": 32,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "connection:51"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 11,
+      "y": 1552,
+      "pct": 36,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "connection:74"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 12,
+      "y": 1747,
+      "pct": 41,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "connection:99"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 13,
+      "y": 1941,
+      "pct": 45,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        0
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 14,
+      "y": 1998,
+      "pct": 46,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        -6
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 15,
+      "y": 2346,
+      "pct": 54,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "pin",
+      "stages": [
+        -354
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 16,
+      "y": 2694,
+      "pct": 63,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "none"
+      ],
+      "act": "flow",
+      "stages": [
+        -702
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 17,
+      "y": 2957,
+      "pct": 69,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 99.52%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -965
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 18,
+      "y": 3041,
+      "pct": 71,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 92.72%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1049
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 19,
+      "y": 3216,
+      "pct": 75,
+      "settled": true,
+      "contrast": [],
+      "cues": [
+        {
+          "t": "Humanby design.",
+          "o": 0.76
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 61.2%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1224
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 20,
+      "y": 3389,
+      "pct": 79,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Humanby design.",
+          "dir": "dark-on-light",
+          "worst": 4.8,
+          "mean": 4.8
+        }
+      ],
+      "cues": [
+        {
+          "t": "Humanby design.",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 23.97%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1397
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 21,
+      "y": 3459,
+      "pct": 80,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Humanby design.",
+          "dir": "dark-on-light",
+          "worst": 4.8,
+          "mean": 4.8
+        }
+      ],
+      "cues": [
+        {
+          "t": "Humanby design.",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 11.84%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1467
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 22,
+      "y": 3474,
+      "pct": 81,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Humanby design.",
+          "dir": "dark-on-light",
+          "worst": 4.8,
+          "mean": 4.8
+        }
+      ],
+      "cues": [
+        {
+          "t": "Humanby design.",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 9.68%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1482
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 23,
+      "y": 3701,
+      "pct": 86,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Humanby design.",
+          "dir": "dark-on-light",
+          "worst": 4.8,
+          "mean": 4.8
+        }
+      ],
+      "cues": [
+        {
+          "t": "Humanby design.",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 0%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1709
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 24,
+      "y": 3733,
+      "pct": 87,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Humanby design.",
+          "dir": "dark-on-light",
+          "worst": 4.8,
+          "mean": 4.8
+        }
+      ],
+      "cues": [
+        {
+          "t": "Humanby design.",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 0%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1741
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 25,
+      "y": 3737,
+      "pct": 87,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Humanby design.",
+          "dir": "dark-on-light",
+          "worst": 4.8,
+          "mean": 4.8
+        }
+      ],
+      "cues": [
+        {
+          "t": "Humanby design.",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 0%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1745
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 26,
+      "y": 3944,
+      "pct": 92,
+      "settled": true,
+      "contrast": [
+        {
+          "t": "Humanby design.",
+          "dir": "dark-on-light",
+          "worst": 4.8,
+          "mean": 4.8
+        }
+      ],
+      "cues": [
+        {
+          "t": "Humanby design.",
+          "o": 1
+        }
+      ],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 0%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -1952
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 27,
+      "y": 3992,
+      "pct": 93,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 0%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -2000
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 28,
+      "y": 4186,
+      "pct": 97,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 0%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -2194
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 29,
+      "y": 4251,
+      "pct": 99,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 0%)"
+      ],
+      "act": "flow",
+      "stages": [
+        -2259
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    },
+    {
+      "i": 30,
+      "y": 4310,
+      "pct": 100,
+      "settled": true,
+      "contrast": [],
+      "cues": [],
+      "clips": [],
+      "rails": [],
+      "wipes": [
+        "inset(0px 0px 0px 0%)"
+      ],
+      "act": "-",
+      "stages": [
+        -2318
+      ],
+      "segs": [],
+      "custom": [
+        "connection:100"
+      ],
+      "customHold": false,
+      "seg": null,
+      "segp": null,
+      "bg": "#18191b"
+    }
+  ],
+  "consoleErrors": [],
+  "failed": []
+}

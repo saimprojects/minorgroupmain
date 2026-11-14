@@ -1,0 +1,137 @@
+{
+  "errors": [],
+  "layouts": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "font": "Archivo, sans-serif",
+      "engine": true
+    },
+    {
+      "name": "desktop-services",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "name": "desktop-contact",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "name": "phone",
+      "width": 390,
+      "scrollWidth": 390,
+      "font": "Archivo, sans-serif",
+      "engine": true
+    },
+    {
+      "name": "phone-services",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "name": "phone-contact",
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "name": "compact",
+      "width": 360,
+      "scrollWidth": 360,
+      "font": "Archivo, sans-serif",
+      "engine": true
+    },
+    {
+      "name": "compact-services",
+      "width": 360,
+      "scrollWidth": 360
+    },
+    {
+      "name": "compact-contact",
+      "width": 360,
+      "scrollWidth": 360
+    }
+  ],
+  "functional": [
+    {
+      "route": "/about",
+      "h1": "Thoughtful people.\nPurposeful systems.",
+      "overflow": false
+    },
+    {
+      "route": "/services/tam-system-development",
+      "h1": "A clearer way to run your travel agency.",
+      "overflow": false
+    },
+    {
+      "route": "/services/saas-mvp-development",
+      "h1": "Your product idea. Ready for real users.",
+      "overflow": false
+    },
+    {
+      "route": "/services/business-dashboard-development",
+      "h1": "The whole business. A clearer picture.",
+      "overflow": false
+    },
+    {
+      "route": "/services/company-website-development",
+      "h1": "Make your first impression count.",
+      "overflow": false
+    },
+    {
+      "route": "/services/automation-system-integration",
+      "h1": "Connect the work. Free up the people.",
+      "overflow": false
+    },
+    {
+      "route": "/privacy",
+      "h1": "Privacy Policy",
+      "overflow": false
+    },
+    {
+      "route": "/terms",
+      "h1": "Terms of Service",
+      "overflow": false
+    },
+    {
+      "route": "/cookies",
+      "h1": "Cookie Policy",
+      "overflow": false
+    },
+    {
+      "route": "/disclaimer",
+      "h1": "Disclaimer",
+      "overflow": false
+    },
+    {
+      "route": "/refund",
+      "h1": "Refund Policy",
+      "overflow": false
+    },
+    {
+      "route": "/legal",
+      "h1": "Legal Hub",
+      "overflow": false
+    },
+    {
+      "mockFormSuccess": true,
+      "payloadFields": [
+        "_subject",
+        "_replyto",
+        "Full Name",
+        "WhatsApp Number",
+        "Phone Number",
+        "Email Address",
+        "Selected Service",
+        "Message"
+      ],
+      "focus": "form-success"
+    },
+    {
+      "reducedMotion": true,
+      "systemHeight": 719,
+      "connected": "1"
+    }
+  ]
+}

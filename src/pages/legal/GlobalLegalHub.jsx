@@ -14,53 +14,35 @@ export default function GlobalLegalHub() {
 
   // Tab data
   const tabs = [
-    { id: 'privacy', label: 'Privacy Policy', icon: '🔒', region: 'Global' },
-    { id: 'terms', label: 'Terms of Service', icon: '📜', region: 'Global' },
-    { id: 'cookies', label: 'Cookie Policy', icon: '🍪', region: 'Global' },
-    { id: 'gdpr', label: 'GDPR (EU)', icon: '🇪🇺', region: 'Europe' },
-    { id: 'ccpa', label: 'CCPA (California)', icon: '🇺🇸', region: 'USA' },
-    { id: 'disclaimer', label: 'Disclaimer', icon: '⚠️', region: 'Global' },
-    { id: 'refund', label: 'Refund Policy', icon: '💰', region: 'Global' },
+    { id: 'privacy', label: 'Privacy Policy', icon: '', region: 'Global' },
+    { id: 'terms', label: 'Terms of Service', icon: '', region: 'Global' },
+    { id: 'cookies', label: 'Cookie Policy', icon: '', region: 'Global' },
+    { id: 'gdpr', label: 'GDPR (EU)', icon: '', region: 'Europe' },
+    { id: 'ccpa', label: 'CCPA (California)', icon: '', region: 'USA' },
+    { id: 'disclaimer', label: 'Disclaimer', icon: '', region: 'Global' },
+    { id: 'refund', label: 'Refund Policy', icon: '', region: 'Global' },
   ]
 
   return (
-    <div className="pt-16">
+    <div className="legal-page">
       {/* HERO SECTION */}
-      <section className="relative bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-sky-400 rounded-full filter blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-sky-300 rounded-full filter blur-3xl"></div>
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Breadcrumb */}
-            <div className="flex items-center justify-center gap-2 text-sm text-sky-200 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <span>/</span>
-              <span className="text-white">Legal Hub</span>
-            </div>
-
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-sky-200 mb-4 border border-sky-400/30 px-3 py-1 rounded-full bg-sky-800/30 backdrop-blur-sm">
-              🌍 Global Compliance Center
-            </span>
-            
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">Legal Hub</h1>
-            <p className="text-xl text-sky-100">One Place for All Legal Information</p>
-            <p className="text-sm text-sky-200 mt-2">Last Updated: {lastUpdated}</p>
-          </div>
-        </div>
+      <section className="legal-hero shell">
+        <nav className="detail-breadcrumb" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><span aria-current="page">Legal Hub</span></nav>
+        <p className="page-kicker">Global Compliance Center</p>
+        <h1 className="page-title">Legal Hub</h1>
+        <p className="page-lead">One Place for All Legal Information</p>
+        <p className="legal-date">Last Updated: {lastUpdated}</p>
       </section>
 
       {/* MAIN CONTENT */}
       <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           {/* Region Selector Banner */}
-          <div className="bg-gradient-to-r from-sky-500 to-sky-600 rounded-2xl p-6 mb-10 text-white shadow-xl">
+          <div className="bg-sky-900 rounded-none p-6 mb-10 text-white ">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-2xl">
-                  🌐
+                  
                 </div>
                 <div>
                   <h2 className="text-xl font-bold">Global Compliance</h2>
@@ -68,27 +50,27 @@ export default function GlobalLegalHub() {
                 </div>
               </div>
               <div className="flex gap-2">
-                <span className="px-3 py-1 bg-white/20 rounded-full text-xs">🇪🇺 GDPR</span>
-                <span className="px-3 py-1 bg-white/20 rounded-full text-xs">🇺🇸 CCPA</span>
-                <span className="px-3 py-1 bg-white/20 rounded-full text-xs">🌍 Global</span>
+                <span className="px-3 py-1 bg-white/20 rounded-full text-xs"> GDPR</span>
+                <span className="px-3 py-1 bg-white/20 rounded-full text-xs"> CCPA</span>
+                <span className="px-3 py-1 bg-white/20 rounded-full text-xs"> Global</span>
               </div>
             </div>
           </div>
 
           {/* Tabs Navigation */}
-          <div className="bg-sky-50 rounded-xl p-2 mb-8 border border-sky-100 overflow-x-auto">
-            <div className="flex flex-wrap gap-1 min-w-max">
+          <div className="bg-sky-50 rounded-none p-2 mb-8 border border-sky-100 overflow-x-auto">
+            <div className="legal-topic-buttons flex flex-wrap gap-1">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 flex items-center gap-2 ${
+                  aria-pressed={activeTab === tab.id}
+                  className={`px-4 py-2.5 rounded-none text-sm font-medium transition-colors duration-200 flex items-center gap-2 ${
                     activeTab === tab.id
-                      ? 'bg-sky-600 text-white shadow-md'
+                      ? 'bg-sky-600 text-white '
                       : 'text-sky-700 hover:bg-sky-100'
                   }`}
                 >
-                  <span>{tab.icon}</span>
                   <span>{tab.label}</span>
                   <span className={`text-xs px-1.5 py-0.5 rounded-full ${
                     activeTab === tab.id 
@@ -103,13 +85,12 @@ export default function GlobalLegalHub() {
           </div>
 
           {/* CONTENT AREA - All Policies in One Place */}
-          <div className="bg-white rounded-2xl border border-sky-100 p-6 md:p-8 shadow-lg">
+          <div className="bg-white rounded-none border border-sky-100 p-6 md:p-8 ">
             
             {/* ===== PRIVACY POLICY ===== */}
             {activeTab === 'privacy' && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-sky-100 pb-4">
-                  <span className="text-3xl">🔒</span>
                   <div>
                     <h2 className="text-2xl font-bold text-sky-900">Privacy Policy</h2>
                     <p className="text-sm text-sky-500">How we collect, use, and protect your data</p>
@@ -154,7 +135,6 @@ export default function GlobalLegalHub() {
             {activeTab === 'terms' && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-sky-100 pb-4">
-                  <span className="text-3xl">📜</span>
                   <div>
                     <h2 className="text-2xl font-bold text-sky-900">Terms of Service</h2>
                     <p className="text-sm text-sky-500">Agreement for using our services</p>
@@ -193,7 +173,6 @@ export default function GlobalLegalHub() {
             {activeTab === 'cookies' && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-sky-100 pb-4">
-                  <span className="text-3xl">🍪</span>
                   <div>
                     <h2 className="text-2xl font-bold text-sky-900">Cookie Policy</h2>
                     <p className="text-sm text-sky-500">How we use cookies and tracking</p>
@@ -206,14 +185,14 @@ export default function GlobalLegalHub() {
 
                   <h3 className="text-lg font-semibold text-sky-900 mt-4">Types of Cookies We Use</h3>
                   <div className="grid gap-3">
-                    <div className="bg-sky-50 p-3 rounded-lg">
-                      <span className="font-semibold">🔐 Essential:</span> Required for site operation
+                    <div className="bg-sky-50 p-3 rounded-none">
+                      <span className="font-semibold"> Essential:</span> Required for site operation
                     </div>
-                    <div className="bg-sky-50 p-3 rounded-lg">
-                      <span className="font-semibold">📊 Analytics:</span> Google Analytics to understand usage
+                    <div className="bg-sky-50 p-3 rounded-none">
+                      <span className="font-semibold"> Analytics:</span> Google Analytics to understand usage
                     </div>
-                    <div className="bg-sky-50 p-3 rounded-lg">
-                      <span className="font-semibold">⚙️ Functional:</span> Remember your preferences
+                    <div className="bg-sky-50 p-3 rounded-none">
+                      <span className="font-semibold"> Functional:</span> Remember your preferences
                     </div>
                   </div>
 
@@ -227,16 +206,14 @@ export default function GlobalLegalHub() {
             {activeTab === 'gdpr' && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-sky-100 pb-4">
-                  <span className="text-3xl">🇪🇺</span>
                   <div>
                     <h2 className="text-2xl font-bold text-sky-900">GDPR Compliance</h2>
                     <p className="text-sm text-sky-500">For European Union Residents</p>
                   </div>
                 </div>
 
-                <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4">
-                  <p className="text-sm text-blue-800 flex items-start gap-2">
-                    <span className="text-xl">🇪🇺</span>
+                <div className="bg-sky-50 border border-sky-200 rounded-none p-4 mb-4">
+                  <p className="text-sm text-sky-800 flex items-start gap-2">
                     <span><span className="font-semibold">EU Users:</span> This section applies to individuals in the European Economic Area</span>
                   </p>
                 </div>
@@ -273,16 +250,14 @@ export default function GlobalLegalHub() {
             {activeTab === 'ccpa' && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-sky-100 pb-4">
-                  <span className="text-3xl">🇺🇸</span>
                   <div>
                     <h2 className="text-2xl font-bold text-sky-900">CCPA Compliance</h2>
                     <p className="text-sm text-sky-500">For California Residents</p>
                   </div>
                 </div>
 
-                <div className="bg-red-50 border border-red-200 rounded-xl p-4 mb-4">
-                  <p className="text-sm text-red-800 flex items-start gap-2">
-                    <span className="text-xl">🇺🇸</span>
+                <div className="bg-sky-50 border border-sky-200 rounded-none p-4 mb-4">
+                  <p className="text-sm text-sky-800 flex items-start gap-2">
                     <span><span className="font-semibold">California Residents:</span> Your privacy rights under CCPA</span>
                   </p>
                 </div>
@@ -305,7 +280,7 @@ export default function GlobalLegalHub() {
                   </ul>
 
                   <h3 className="text-lg font-semibold text-sky-900 mt-4">Do We Sell Personal Information?</h3>
-                  <p className="font-bold text-green-600">NO - We do not and will not sell your personal information.</p>
+                  <p className="font-bold text-sky-600">NO - We do not and will not sell your personal information.</p>
 
                   <h3 className="text-lg font-semibold text-sky-900 mt-4">Submit CCPA Request</h3>
                   <p>Email: <a href="mailto:saimpkf@gmail.com" className="text-sky-600 underline">saimpkf@gmail.com</a> (Subject: CCPA Request)</p>
@@ -317,7 +292,6 @@ export default function GlobalLegalHub() {
             {activeTab === 'disclaimer' && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-sky-100 pb-4">
-                  <span className="text-3xl">⚠️</span>
                   <div>
                     <h2 className="text-2xl font-bold text-sky-900">Disclaimer</h2>
                     <p className="text-sm text-sky-500">Important legal notices</p>
@@ -344,7 +318,6 @@ export default function GlobalLegalHub() {
             {activeTab === 'refund' && (
               <div className="space-y-6">
                 <div className="flex items-center gap-3 border-b border-sky-100 pb-4">
-                  <span className="text-3xl">💰</span>
                   <div>
                     <h2 className="text-2xl font-bold text-sky-900">Refund Policy</h2>
                     <p className="text-sm text-sky-500">Our commitment to fair refunds</p>
@@ -352,17 +325,17 @@ export default function GlobalLegalHub() {
                 </div>
 
                 <div className="grid sm:grid-cols-3 gap-3 mb-4">
-                  <div className="bg-sky-50 p-3 rounded-lg text-center">
-                    <div className="text-xl">⏱️</div>
+                  <div className="bg-sky-50 p-3 rounded-none text-center">
+                    <div className="text-xl">⏱</div>
                     <div className="text-sm font-semibold">3 Days</div>
                     <div className="text-xs">Full refund window</div>
                   </div>
-                  <div className="bg-sky-50 p-3 rounded-lg text-center">
-                    <div className="text-xl">📅</div>
+                  <div className="bg-sky-50 p-3 rounded-none text-center">
+                    <div className="text-xl"></div>
                     <div className="text-sm font-semibold">5-10 Days</div>
                     <div className="text-xs">Processing time</div>
                   </div>
-                  <div className="bg-sky-50 p-3 rounded-lg text-center">
+                  <div className="bg-sky-50 p-3 rounded-none text-center">
                     <div className="text-xl">⭐</div>
                     <div className="text-sm font-semibold">Fair</div>
                     <div className="text-xs">Pro-rata refunds</div>
@@ -406,19 +379,19 @@ export default function GlobalLegalHub() {
           </div>
 
           {/* Contact Section - Common for all tabs */}
-          <div className="mt-8 bg-gradient-to-br from-sky-900 to-sky-800 rounded-2xl p-6 text-white">
+          <div className="mt-8 bg-sky-900 rounded-none p-6 text-white">
             <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-              <span>📞</span> Questions About Legal Matters?
+              <span></span> Questions About Legal Matters?
             </h3>
             <p className="text-sm text-sky-200 mb-4">Contact us for any legal or privacy-related inquiries:</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="mailto:saimpkf@gmail.com" className="flex items-center gap-2 text-sm bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition-colors">
+              <a href="mailto:saimpkf@gmail.com" className="flex items-center gap-2 text-sm bg-white/20 px-4 py-2 rounded-none hover:bg-white/30 transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 saimpkf@gmail.com
               </a>
-              <a href="tel:+923131471263" className="flex items-center gap-2 text-sm bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition-colors">
+              <a href="tel:+923131471263" className="flex items-center gap-2 text-sm bg-white/20 px-4 py-2 rounded-none hover:bg-white/30 transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>

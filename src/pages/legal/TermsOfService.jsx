@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import SectionTitle from '../../components/SectionTitle.jsx'
 
 export default function TermsOfService() {
   useEffect(() => {
@@ -11,41 +10,21 @@ export default function TermsOfService() {
   const lastUpdated = 'March 1, 2026'
 
   return (
-    <div className="pt-16">
+    <div className="legal-page">
       {/* HERO SECTION */}
-      <section className="relative bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 text-white overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-sky-400 rounded-full filter blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-sky-300 rounded-full filter blur-3xl"></div>
-        </div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Breadcrumb */}
-            <div className="flex items-center justify-center gap-2 text-sm text-sky-200 mb-6">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <span>/</span>
-              <Link to="/legal" className="hover:text-white transition-colors">Legal</Link>
-              <span>/</span>
-              <span className="text-white">Terms of Service</span>
-            </div>
-
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest text-sky-200 mb-4 border border-sky-400/30 px-3 py-1 rounded-full bg-sky-800/30 backdrop-blur-sm">
-              Legal Agreement
-            </span>
-            
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">Terms of Service</h1>
-            <p className="text-xl text-sky-100">Last Updated: {lastUpdated}</p>
-          </div>
-        </div>
+      <section className="legal-hero shell">
+        <nav className="detail-breadcrumb" aria-label="Breadcrumb"><Link to="/">Home</Link><span aria-hidden="true">/</span><Link to="/legal">Legal</Link><span aria-hidden="true">/</span><span aria-current="page">Terms of Service</span></nav>
+        <p className="page-kicker">Legal Agreement</p>
+        <h1 className="page-title">Terms of Service</h1>
+        
+        <p className="legal-date">Last Updated: {lastUpdated}</p>
       </section>
 
       {/* CONTENT SECTION */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           {/* Last Updated Badge */}
-          <div className="bg-sky-50 rounded-xl p-4 mb-8 border border-sky-100 flex items-center gap-3">
+          <div className="bg-sky-50 rounded-none p-4 mb-8 border border-sky-100 flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -69,7 +48,7 @@ export default function TermsOfService() {
           </div>
 
           {/* Table of Contents */}
-          <div className="bg-sky-50 rounded-xl p-6 my-8 border border-sky-100">
+          <div className="bg-sky-50 rounded-none p-6 my-8 border border-sky-100">
             <h2 className="text-lg font-bold text-sky-900 mb-3 flex items-center gap-2">
               <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
@@ -194,7 +173,7 @@ export default function TermsOfService() {
                   <li>Deliverables and acceptance criteria</li>
                   <li>Revision and change request process</li>
                 </ul>
-                <div className="bg-sky-50 p-4 rounded-lg mt-3">
+                <div className="bg-sky-50 p-4 rounded-none mt-3">
                   <p className="text-sm">
                     <span className="font-semibold">Note:</span> In the absence of a separate agreement, these Terms of Service shall govern the relationship.
                   </p>
@@ -346,7 +325,7 @@ export default function TermsOfService() {
               <div className="ml-11 space-y-6 text-sky-700">
                 <p>If you have any questions about these Terms, please contact us:</p>
                 
-                <div className="bg-sky-50 rounded-xl p-6 border border-sky-100">
+                <div className="bg-sky-50 rounded-none p-6 border border-sky-100">
                   <h3 className="font-bold text-sky-900 mb-3">Minor Group of Technologies</h3>
                   <div className="space-y-2 text-sm">
                     <p className="flex items-center gap-2">
@@ -375,14 +354,14 @@ export default function TermsOfService() {
           </div>
 
           {/* Acknowledgment Section */}
-          <div className="mt-12 p-6 bg-sky-50 rounded-xl border border-sky-100 text-center">
+          <div className="mt-12 p-6 bg-sky-50 rounded-none border border-sky-100 text-center">
             <p className="text-sm text-sky-700">
               By using our website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
               <Link 
                 to="/contact" 
-                className="inline-flex items-center gap-1 text-sm bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition-colors"
+                className="inline-flex items-center gap-1 text-sm bg-sky-600 text-white px-4 py-2 rounded-none hover:bg-sky-700 transition-colors"
               >
                 Contact Us
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -391,13 +370,13 @@ export default function TermsOfService() {
               </Link>
               <Link 
                 to="/privacy" 
-                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-lg hover:bg-sky-100 transition-colors"
+                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-none hover:bg-sky-100 transition-colors"
               >
                 View Privacy Policy
               </Link>
               <Link 
                 to="/" 
-                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-lg hover:bg-sky-100 transition-colors"
+                className="inline-flex items-center gap-1 text-sm border border-sky-300 text-sky-700 px-4 py-2 rounded-none hover:bg-sky-100 transition-colors"
               >
                 Back to Home
               </Link>
