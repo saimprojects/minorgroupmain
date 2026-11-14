@@ -146,9 +146,12 @@
     }
   ],
   "hydrationErrors": [],
-  "navigation": [],
+  "navigation": [
+    "Client navigation updates titles, descriptions, canonicals and service breadcrumb without duplicates"
+  ],
   "checks": [
     "All public raw HTML pages, no-JS content/navigation, valid internal links, sitemap/canonical agreement, and true 404 passed",
-    "Local static preview clean URL redirects and referenced assets passed (not a production hosting test)"
+    "Local static preview clean URL redirects and referenced assets passed (not a production hosting test)",
+    "Hydrated mobile contact form passes with mocked response; no external inquiry sent"
   ]
 }

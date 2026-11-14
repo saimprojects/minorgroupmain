@@ -13,10 +13,14 @@ Deploy `dist/` using the supplied `vercel.json`. Run the full npm build command;
 
 ## SEO and content
 
-Route metadata and structured data live in `src/seo/site.js`. The build and client navigation use the same renderer. When adding a public route, update App routing, SEO records together. The build generates the production sitemap from those records; the SEO regression checks confirm agreement.
+Route metadata and structured data live in `src/seo/site.js`. The build and client navigation use the same renderer. When adding a public route, update App routing and SEO records together. The build generates the production sitemap from those records; the SEO regression checks confirm agreement.
 
 The preferred origin is `https://minorgroup.site`. Vercel configuration redirects only `www.minorgroup.site` to that origin. Confirm the hosting account has no opposite domain redirect before deploying.
 
 See [the SEO audit](docs/SEO-AUDIT.md) and [test results](docs/seo-evidence/report.json). Local tests do not establish production indexing, real-user Core Web Vitals, or Search Console ownership.
 
 The inquiry form uses the existing Formspree endpoint, with an optional `VITE_FORMSPREE_ENDPOINT` override. Automated checks intercept submission; they do not send a real project inquiry.
+
+## Journal and company contacts
+
+Company details are centralized in src/data/company.js. Journal content lives in src/data/blog/ and is collected in src/data/blog.js. Add a new article there using the existing content shape; the SEO route list and production sitemap derive article routes automatically. Run npm run build, npm run preview and npm run test:blog after changes. See docs/BLOG-AND-CONTACT-UPDATE.md for implementation notes.

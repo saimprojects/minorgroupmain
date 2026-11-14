@@ -8,7 +8,8 @@
     "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
     "lint": "eslint .",
     "preview": "node scripts/serve-built.mjs",
-    "test:seo": "node scripts/verify-seo.mjs"
+    "test:seo": "node scripts/verify-seo.mjs",
+    "test:blog": "node scripts/verify-blog.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^1.6.1",
