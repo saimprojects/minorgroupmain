@@ -1,11 +1,9 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight } from 'lucide-react'
 
 const founderImage = 'https://res.cloudinary.com/dxommxt6d/image/upload/v1767509276/Saim_smxepz.webp'
 
 export default function About() {
-  useEffect(() => { document.title = 'About | Minor Group of Technologies' }, [])
 
   return <div className="page-shell about-page">
     <section className="page-hero shell">
@@ -54,3 +52,4 @@ export default function About() {
     </section>
   </div>
 }
+

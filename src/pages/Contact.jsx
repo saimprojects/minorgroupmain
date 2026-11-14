@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowUpRight, ArrowRight, Check, LoaderCircle } from 'lucide-react'
+import { company } from '../data/company.js'
 
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || 'https://formspree.io/f/mykdvoav'
-const COMPANY_PHONE = '+923131471263'
-const WHATSAPP_LINK = 'https://wa.me/923131471263'
 const emptyForm = { fullName: '', whatsapp: '', phone: '', email: '', service: '', message: '' }
 const serviceOptions = [
   { value: '', label: 'Choose a service' },
@@ -20,7 +19,6 @@ export default function Contact() {
   const [errorMsg, setErrorMsg] = useState('')
   const feedbackRef = useRef(null)
 
-  useEffect(() => { document.title = 'Start a project | Minor Group of Technologies' }, [])
   useEffect(() => { if (status === 'success' || status === 'error') feedbackRef.current?.focus() }, [status])
 
   const handleChange = (event) => setFormData(prev => ({ ...prev, [event.target.name]: event.target.value }))
@@ -70,10 +68,9 @@ export default function Contact() {
         <h2 className="section-heading-text">A good place<br />to begin.</h2>
         <p className="contact-note">Share the idea, the problem, or the part you haven’t quite figured out yet. A little context helps us make the first conversation useful.</p>
         <dl className="contact-details">
-          <div><dt>Email</dt><dd><a href="mailto:saimpkf@gmail.com">saimpkf@gmail.com <ArrowUpRight size={16} aria-hidden="true" /></a></dd></div>
-          <div><dt>Phone</dt><dd><a href={`tel:${COMPANY_PHONE}`}>+92 313 1471263</a></dd></div>
-          <div><dt>Prefer a quick message?</dt><dd><a href={WHATSAPP_LINK} target="_blank" rel="noreferrer">Talk on WhatsApp <ArrowUpRight size={16} aria-hidden="true" /></a></dd></div>
-          <div><dt>Based in Pakistan</dt><dd>Monday to Saturday, 9am to 6pm</dd></div>
+          <div><dt>Email</dt><dd><a href={`mailto:${company.email}`}>{company.email} <ArrowUpRight size={16} aria-hidden="true" /></a></dd></div>
+          <div><dt>Phone</dt><dd><a href={`tel:${company.phone}`}>{company.phoneDisplay}</a></dd></div>
+          <div><dt>Based in Pakistan</dt><dd>Monday to Saturday, 9am to 6pm PKT</dd></div>
         </dl>
         <p className="contact-note">We typically respond within 24–48 business hours.</p>
       </aside>
@@ -83,7 +80,7 @@ export default function Contact() {
         <h2>Message received.</h2>
         <p>Thanks for sharing your project. We’ll review your request and get back to you within 24–48 business hours.</p>
         <button className="inline-action" onClick={() => setStatus('idle')}>Send another request <ArrowRight size={20} aria-hidden="true" /></button>
-      </div> : <form className="agency-form" onSubmit={handleSubmit} aria-busy={status === 'submitting'}>
+      </div> : <form className="agency-form" action={FORMSPREE_ENDPOINT} method="post" onSubmit={handleSubmit} aria-busy={status === 'submitting'}>
         <h2>Tell us a little about it.</h2>
         <p className="form-note">Fields marked * are required.</p>
         <div className="form-grid">
@@ -94,10 +91,13 @@ export default function Contact() {
           <div className="field full-width"><label className="field-label" htmlFor="contact-service">What can we help with? *</label><select id="contact-service" name="service" required value={formData.service} onChange={handleChange}>{serviceOptions.map(option => <option key={option.value} value={option.value} disabled={option.value === ''}>{option.label}</option>)}</select></div>
           <div className="field full-width"><label className="field-label" htmlFor="contact-message">A little about your project *</label><textarea id="contact-message" name="message" required rows={5} value={formData.message} onChange={handleChange} placeholder="The idea, the goals, and what you need a hand with." /></div>
         </div>
-        {status === 'error' && <div className="form-error" role="alert" tabIndex={-1} ref={feedbackRef}><p>{errorMsg}</p><a href="mailto:saimpkf@gmail.com">You can also email us directly.</a></div>}
+        {status === 'error' && <div className="form-error" role="alert" tabIndex={-1} ref={feedbackRef}><p>{errorMsg}</p><a href={`mailto:${company.email}`}>You can also email us directly.</a></div>}
         <button className="submit-button" type="submit" disabled={status === 'submitting'}>{status === 'submitting' ? <>Sending <LoaderCircle size={20} aria-hidden="true" className="animate-spin" /></> : <>Send project request <ArrowUpRight size={20} aria-hidden="true" /></>}</button>
         <p className="form-note">By submitting, you agree to be contacted about your project inquiry.</p>
       </form>}
     </section>
   </div>
 }
+
+
+

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 export default function GlobalLegalHub() {
   useEffect(() => {
-    document.title = 'Legal Hub — Minor Group of Technologies'
     window.scrollTo(0, 0)
   }, [])
 
@@ -126,7 +125,7 @@ export default function GlobalLegalHub() {
                   <p>We implement appropriate technical and organizational measures to protect your data.</p>
 
                   <h3 className="text-lg font-semibold text-sky-900 mt-4">5. Your Rights</h3>
-                  <p>You have the right to access, correct, or delete your personal information. Contact us at <a href="mailto:saimpkf@gmail.com" className="text-sky-600 underline">saimpkf@gmail.com</a></p>
+                  <p>You have the right to access, correct, or delete your personal information. Contact us at <a href="mailto:Contact@minorgroup.site" className="text-sky-600 underline">Contact@minorgroup.site</a></p>
                 </div>
               </div>
             )}
@@ -241,7 +240,7 @@ export default function GlobalLegalHub() {
                   <p>As a Pakistan-based company, we use Standard Contractual Clauses for international data transfers.</p>
 
                   <h3 className="text-lg font-semibold text-sky-900 mt-4">Contact for GDPR Requests</h3>
-                  <p>Email: <a href="mailto:saimpkf@gmail.com" className="text-sky-600 underline">saimpkf@gmail.com</a> (Subject: GDPR Request)</p>
+                  <p>Email: <a href="mailto:Contact@minorgroup.site" className="text-sky-600 underline">Contact@minorgroup.site</a> (Subject: GDPR Request)</p>
                 </div>
               </div>
             )}
@@ -283,7 +282,7 @@ export default function GlobalLegalHub() {
                   <p className="font-bold text-sky-600">NO - We do not and will not sell your personal information.</p>
 
                   <h3 className="text-lg font-semibold text-sky-900 mt-4">Submit CCPA Request</h3>
-                  <p>Email: <a href="mailto:saimpkf@gmail.com" className="text-sky-600 underline">saimpkf@gmail.com</a> (Subject: CCPA Request)</p>
+                  <p>Email: <a href="mailto:Contact@minorgroup.site" className="text-sky-600 underline">Contact@minorgroup.site</a> (Subject: CCPA Request)</p>
                 </div>
               </div>
             )}
@@ -372,7 +371,7 @@ export default function GlobalLegalHub() {
                   </ul>
 
                   <h3 className="text-lg font-semibold text-sky-900 mt-4">How to Request a Refund</h3>
-                  <p>Email <a href="mailto:saimpkf@gmail.com" className="text-sky-600 underline">saimpkf@gmail.com</a> with subject "REFUND REQUEST" and your project details.</p>
+                  <p>Email <a href="mailto:Contact@minorgroup.site" className="text-sky-600 underline">Contact@minorgroup.site</a> with subject "REFUND REQUEST" and your project details.</p>
                 </div>
               </div>
             )}
@@ -385,17 +384,17 @@ export default function GlobalLegalHub() {
             </h3>
             <p className="text-sm text-sky-200 mb-4">Contact us for any legal or privacy-related inquiries:</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="mailto:saimpkf@gmail.com" className="flex items-center gap-2 text-sm bg-white/20 px-4 py-2 rounded-none hover:bg-white/30 transition-colors">
+              <a href="mailto:Contact@minorgroup.site" className="flex items-center gap-2 text-sm bg-white/20 px-4 py-2 rounded-none hover:bg-white/30 transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                saimpkf@gmail.com
+                Contact@minorgroup.site
               </a>
-              <a href="tel:+923131471263" className="flex items-center gap-2 text-sm bg-white/20 px-4 py-2 rounded-none hover:bg-white/30 transition-colors">
+              <a href="tel:+19175085593" className="flex items-center gap-2 text-sm bg-white/20 px-4 py-2 rounded-none hover:bg-white/30 transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                +92 313 1471263
+                +1 (917) 508-5593
               </a>
             </div>
             <p className="text-xs text-sky-300 mt-4">We typically respond within 24-48 hours.</p>
@@ -418,3 +417,4 @@ export default function GlobalLegalHub() {
     </div>
   )
 }
+

@@ -1,13 +1,10 @@
-import { useEffect } from 'react'
+
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, ArrowLeft } from 'lucide-react'
 import { services } from '../data/services.js'
 
 export default function ServiceDetail({ serviceKey }) {
   const service = services.find((item) => item.key === serviceKey)
-  useEffect(() => {
-    document.title = `${service.label} | Minor Group of Technologies`
-  }, [service.label])
 
   return (
     <div className="page-shell service-detail-page">
@@ -59,4 +56,5 @@ export default function ServiceDetail({ serviceKey }) {
     </div>
   )
 }
+
 

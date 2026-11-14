@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, ArrowRight } from 'lucide-react'
 
@@ -36,7 +35,6 @@ const services = [
 ]
 
 export default function Services() {
-  useEffect(() => { document.title = 'Services | Minor Group of Technologies' }, [])
 
   return <div className="page-shell services-page">
     <section className="page-hero shell">
@@ -75,3 +73,4 @@ export default function Services() {
     </section>
   </div>
 }
+

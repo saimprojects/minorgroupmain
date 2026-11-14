@@ -1,0 +1,154 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "staticContent": true,
+      "title": "Custom Software & SaaS Development | Minor Group",
+      "descriptionLength": 142,
+      "canonical": "https://minorgroup.site/"
+    },
+    {
+      "path": "/services",
+      "status": 200,
+      "staticContent": true,
+      "title": "Software Development Services | Minor Group",
+      "descriptionLength": 148,
+      "canonical": "https://minorgroup.site/services"
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "staticContent": true,
+      "title": "About Our Software Development Company | Minor Group",
+      "descriptionLength": 160,
+      "canonical": "https://minorgroup.site/about"
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "staticContent": true,
+      "title": "Start Your Software Project | Contact Minor Group",
+      "descriptionLength": 143,
+      "canonical": "https://minorgroup.site/contact"
+    },
+    {
+      "path": "/services/tam-system-development",
+      "status": 200,
+      "staticContent": true,
+      "title": "Travel Agency Management Software (TAM) | Minor Group",
+      "descriptionLength": 149,
+      "canonical": "https://minorgroup.site/services/tam-system-development"
+    },
+    {
+      "path": "/services/saas-mvp-development",
+      "status": 200,
+      "staticContent": true,
+      "title": "SaaS MVP Development Services | Minor Group",
+      "descriptionLength": 154,
+      "canonical": "https://minorgroup.site/services/saas-mvp-development"
+    },
+    {
+      "path": "/services/business-dashboard-development",
+      "status": 200,
+      "staticContent": true,
+      "title": "Business Dashboard Development | Minor Group",
+      "descriptionLength": 146,
+      "canonical": "https://minorgroup.site/services/business-dashboard-development"
+    },
+    {
+      "path": "/services/company-website-development",
+      "status": 200,
+      "staticContent": true,
+      "title": "Company Website Design & Development | Minor Group",
+      "descriptionLength": 153,
+      "canonical": "https://minorgroup.site/services/company-website-development"
+    },
+    {
+      "path": "/services/automation-system-integration",
+      "status": 200,
+      "staticContent": true,
+      "title": "Workflow Automation & System Integration | Minor Group",
+      "descriptionLength": 163,
+      "canonical": "https://minorgroup.site/services/automation-system-integration"
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "staticContent": true,
+      "title": "Custom Software & Website Guides for US Businesses | Minor Group",
+      "descriptionLength": 157,
+      "canonical": "https://minorgroup.site/blog"
+    },
+    {
+      "path": "/blog/custom-software-development-usa-guide",
+      "status": 200,
+      "staticContent": true,
+      "title": "Custom Software Development for US Businesses | Minor Group",
+      "descriptionLength": 143,
+      "canonical": "https://minorgroup.site/blog/custom-software-development-usa-guide"
+    },
+    {
+      "path": "/blog/business-website-development-usa-guide",
+      "status": 200,
+      "staticContent": true,
+      "title": "Business Website Development in the USA: Planning Guide",
+      "descriptionLength": 152,
+      "canonical": "https://minorgroup.site/blog/business-website-development-usa-guide"
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "staticContent": true,
+      "title": "Privacy Policy | Minor Group of Technologies",
+      "descriptionLength": 142,
+      "canonical": "https://minorgroup.site/privacy"
+    },
+    {
+      "path": "/terms",
+      "status": 200,
+      "staticContent": true,
+      "title": "Terms of Service | Minor Group of Technologies",
+      "descriptionLength": 146,
+      "canonical": "https://minorgroup.site/terms"
+    },
+    {
+      "path": "/cookies",
+      "status": 200,
+      "staticContent": true,
+      "title": "Cookie Policy | Minor Group of Technologies",
+      "descriptionLength": 145,
+      "canonical": "https://minorgroup.site/cookies"
+    },
+    {
+      "path": "/disclaimer",
+      "status": 200,
+      "staticContent": true,
+      "title": "Website & Services Disclaimer | Minor Group",
+      "descriptionLength": 149,
+      "canonical": "https://minorgroup.site/disclaimer"
+    },
+    {
+      "path": "/refund",
+      "status": 200,
+      "staticContent": true,
+      "title": "Refund & Cancellation Policy | Minor Group",
+      "descriptionLength": 149,
+      "canonical": "https://minorgroup.site/refund"
+    },
+    {
+      "path": "/legal",
+      "status": 200,
+      "staticContent": true,
+      "title": "Legal Policies & Terms | Minor Group of Technologies",
+      "descriptionLength": 150,
+      "canonical": "https://minorgroup.site/legal"
+    }
+  ],
+  "hydrationErrors": [],
+  "navigation": [],
+  "checks": [
+    "All public raw HTML pages, no-JS content/navigation, valid internal links, sitemap/canonical agreement, and true 404 passed",
+    "Local static preview clean URL redirects and referenced assets passed (not a production hosting test)"
+  ]
+}
