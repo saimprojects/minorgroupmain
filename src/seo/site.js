@@ -29,6 +29,11 @@ export const routes = [
     description: 'Discuss your software, SaaS, website or automation project with Minor Group. Send a project inquiry, email our team or call our company number.',
   },
   {
+    path: '/careers', name: 'Careers', type: 'CollectionPage',
+    title: 'Careers at Minor Group | Open Positions',
+    description: 'Explore Sales Executive, Video Editor, and Next.js Developer openings at Minor Group of Technologies. Read the role requirements and apply by email.',
+  },
+  {
     path: '/services/tam-system-development', name: 'Travel Agency Management', type: 'WebPage',
     title: 'Travel Agency Management Software (TAM) | Minor Group',
     description: 'Manage travel agency bookings, clients, visas, payments and staff with TAM. Explore role-based workflows for Umrah, Hajj and group travel operations.',
