@@ -24,3 +24,12 @@ http.createServer(async (req,res) => {
     res.end(req.method==='HEAD'?undefined:body)
   } catch {res.writeHead(500);res.end('Preview server error')}
 }).listen(port,'127.0.0.1',()=>console.log(`Built site preview: http://127.0.0.1:${port}`))
+
+
+
+
+
+
+
+
+
