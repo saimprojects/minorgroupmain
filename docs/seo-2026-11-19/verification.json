@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-19",
+  "publicRoutes": 22,
+  "seoChecksPassed": [
+    "All public raw HTML pages, no-JS content/navigation, valid internal links, sitemap/canonical agreement, and true 404 passed",
+    "Local static preview clean URL redirects and referenced assets passed (not a production hosting test)",
+    "Hydrated mobile contact form passes with mocked response; no external inquiry sent"
+  ],
+  "hydrationErrors": [],
+  "finalArticleLayouts": 16,
+  "widths": [
+    1440,
+    768,
+    390,
+    360
+  ],
+  "newArticles": [
+    {
+      "slug": "choose-dashboard-development-company",
+      "title": "How to Choose a Dashboard Development Company",
+      "readTime": "7 min read",
+      "sections": 8,
+      "faqs": 4,
+      "quickAnswerWords": 54,
+      "sources": 3
+    },
+    {
+      "slug": "reporting-dashboard-requirements",
+      "title": "Reporting Dashboard Requirements: A Practical Checklist",
+      "readTime": "7 min read",
+      "sections": 8,
+      "faqs": 4,
+      "quickAnswerWords": 55,
+      "sources": 3
+    },
+    {
+      "slug": "custom-dashboard-vs-power-bi",
+      "title": "Custom Dashboard vs Power BI: How to Choose",
+      "readTime": "8 min read",
+      "sections": 9,
+      "faqs": 4,
+      "quickAnswerWords": 58,
+      "sources": 5
+    },
+    {
+      "slug": "automated-business-reporting",
+      "title": "How to Automate Business Reporting Across Your Tools",
+      "readTime": "7 min read",
+      "sections": 8,
+      "faqs": 4,
+      "quickAnswerWords": 50,
+      "sources": 2
+    }
+  ],
+  "deployment": "Not performed",
+  "indexing": "Not verified; excluded URL lists not provided"
+}

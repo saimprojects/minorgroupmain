@@ -42,7 +42,7 @@ export const routes = [
   },
   {
     path: '/services/business-dashboard-development', name: 'Business Dashboard Development', type: 'WebPage',
-    title: 'Business Dashboard Development | Minor Group',
+    title: 'Business Dashboard Development Services | Minor Group',
     description: 'Build a custom business dashboard for orders, inventory, customers, staff and reporting. Connect your operations and data in one useful workspace.',
     service: { name: 'Business Dashboard Development', serviceType: 'Custom business dashboard and management system development' },
   },
@@ -60,8 +60,8 @@ export const routes = [
   },
   {
     path: '/blog', name: 'Blog', type: 'CollectionPage',
-    title: 'Custom Software & Website Guides for US Businesses | Minor Group',
-    description: 'Practical custom software and website development guides for US business owners. Plan scope, compare partners and prepare a stronger launch with Minor Group.',
+    title: 'Dashboard, Software & Website Guides | Minor Group',
+    description: 'Practical guides for US businesses planning dashboards, reporting automation, custom software and websites. Compare options and prepare a clear project brief.',
   },
   ...posts.map(post => ({
     path: `/blog/${post.slug}`, name: post.title, type: 'WebPage',

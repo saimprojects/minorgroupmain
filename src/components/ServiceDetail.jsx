@@ -2,9 +2,11 @@
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, ArrowLeft } from 'lucide-react'
 import { services } from '../data/services.js'
+import { posts } from '../data/blog.js'
 
 export default function ServiceDetail({ serviceKey }) {
   const service = services.find((item) => item.key === serviceKey)
+  const guides = posts.filter(post => post.serviceKeys?.includes(serviceKey)).slice(0, 4)
 
   return (
     <div className="page-shell service-detail-page">
@@ -42,6 +44,8 @@ export default function ServiceDetail({ serviceKey }) {
           {service.process.map((step) => <li key={step.title}><strong>{step.title}</strong><p>{step.copy}</p></li>)}
         </ol>
       </section>
+
+      {guides.length>0&&<section className="service-guides" aria-labelledby="guides-heading"><p className="page-kicker">Before you build</p><h2 id="guides-heading">Work through the decisions.</h2><div>{guides.map(post=><Link key={post.slug} to={`/blog/${post.slug}`}><span>{post.category}</span><h3>{post.title}</h3><ArrowUpRight size={20}/></Link>)}</div></section>}
 
       <section className="detail-cta">
         <h2>{service.closing}</h2>

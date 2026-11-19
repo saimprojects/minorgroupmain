@@ -6,7 +6,7 @@ export default function Blog() {
     <section className="page-hero shell">
       <p className="page-kicker">The Minor Group journal</p>
       <h1 className="page-title">Better questions.<br/>Better builds.</h1>
-      <p className="page-lead">Practical guides to custom software and website development for US business owners and teams.</p>
+      <p className="page-lead">Practical guides to dashboards, reporting automation, custom software and websites for US business owners and teams.</p>
     </section>
     <section className="shell blog-index" aria-label="Latest articles">
       {posts.map(post=><article className="blog-index-entry" key={post.slug}>

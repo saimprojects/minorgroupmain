@@ -43,6 +43,11 @@ try {
       assert(article,route.path+' has BlogPosting schema')
       assert.equal(article.headline,route.article.title)
       assert.equal(article.inLanguage,'en-US')
+      assert.equal(article.datePublished,route.article.publishedAt)
+      if(route.article.quickAnswer){
+        assert.equal(await page.locator('.article-answer p').innerText(),route.article.quickAnswer)
+        assert.equal(await page.locator('.article-faq-item').count(),route.article.faqs.length)
+      }
       assert.equal(await page.locator('meta[property="og:type"]').getAttribute('content'),'article')
       const crumbs=structured['@graph'].find(node=>node['@type']==='BreadcrumbList')
       assert.deepEqual(crumbs.itemListElement.map(item=>item.name),['Home','Blog',route.article.title])

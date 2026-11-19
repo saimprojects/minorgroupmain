@@ -6,7 +6,7 @@
       "staticContent": true,
       "title": "Custom Software & SaaS Development | Minor Group",
       "descriptionLength": 142,
-      "canonical": "https://minorgroup.site/"
+      "canonical": "https://www.minorgroup.site/"
     },
     {
       "path": "/services",
@@ -14,7 +14,7 @@
       "staticContent": true,
       "title": "Software Development Services | Minor Group",
       "descriptionLength": 148,
-      "canonical": "https://minorgroup.site/services"
+      "canonical": "https://www.minorgroup.site/services"
     },
     {
       "path": "/about",
@@ -22,7 +22,7 @@
       "staticContent": true,
       "title": "About Our Software Development Company | Minor Group",
       "descriptionLength": 160,
-      "canonical": "https://minorgroup.site/about"
+      "canonical": "https://www.minorgroup.site/about"
     },
     {
       "path": "/contact",
@@ -30,7 +30,7 @@
       "staticContent": true,
       "title": "Start Your Software Project | Contact Minor Group",
       "descriptionLength": 143,
-      "canonical": "https://minorgroup.site/contact"
+      "canonical": "https://www.minorgroup.site/contact"
     },
     {
       "path": "/services/tam-system-development",
@@ -38,7 +38,7 @@
       "staticContent": true,
       "title": "Travel Agency Management Software (TAM) | Minor Group",
       "descriptionLength": 149,
-      "canonical": "https://minorgroup.site/services/tam-system-development"
+      "canonical": "https://www.minorgroup.site/services/tam-system-development"
     },
     {
       "path": "/services/saas-mvp-development",
@@ -46,15 +46,15 @@
       "staticContent": true,
       "title": "SaaS MVP Development Services | Minor Group",
       "descriptionLength": 154,
-      "canonical": "https://minorgroup.site/services/saas-mvp-development"
+      "canonical": "https://www.minorgroup.site/services/saas-mvp-development"
     },
     {
       "path": "/services/business-dashboard-development",
       "status": 200,
       "staticContent": true,
-      "title": "Business Dashboard Development | Minor Group",
+      "title": "Business Dashboard Development Services | Minor Group",
       "descriptionLength": 146,
-      "canonical": "https://minorgroup.site/services/business-dashboard-development"
+      "canonical": "https://www.minorgroup.site/services/business-dashboard-development"
     },
     {
       "path": "/services/company-website-development",
@@ -62,7 +62,7 @@
       "staticContent": true,
       "title": "Company Website Design & Development | Minor Group",
       "descriptionLength": 153,
-      "canonical": "https://minorgroup.site/services/company-website-development"
+      "canonical": "https://www.minorgroup.site/services/company-website-development"
     },
     {
       "path": "/services/automation-system-integration",
@@ -70,15 +70,47 @@
       "staticContent": true,
       "title": "Workflow Automation & System Integration | Minor Group",
       "descriptionLength": 163,
-      "canonical": "https://minorgroup.site/services/automation-system-integration"
+      "canonical": "https://www.minorgroup.site/services/automation-system-integration"
     },
     {
       "path": "/blog",
       "status": 200,
       "staticContent": true,
-      "title": "Custom Software & Website Guides for US Businesses | Minor Group",
-      "descriptionLength": 157,
-      "canonical": "https://minorgroup.site/blog"
+      "title": "Dashboard, Software & Website Guides | Minor Group",
+      "descriptionLength": 158,
+      "canonical": "https://www.minorgroup.site/blog"
+    },
+    {
+      "path": "/blog/choose-dashboard-development-company",
+      "status": 200,
+      "staticContent": true,
+      "title": "How to Choose a Dashboard Development Company",
+      "descriptionLength": 156,
+      "canonical": "https://www.minorgroup.site/blog/choose-dashboard-development-company"
+    },
+    {
+      "path": "/blog/reporting-dashboard-requirements",
+      "status": 200,
+      "staticContent": true,
+      "title": "Reporting Dashboard Requirements & KPI Checklist",
+      "descriptionLength": 145,
+      "canonical": "https://www.minorgroup.site/blog/reporting-dashboard-requirements"
+    },
+    {
+      "path": "/blog/custom-dashboard-vs-power-bi",
+      "status": 200,
+      "staticContent": true,
+      "title": "Custom Dashboard vs Power BI: A Business Decision Guide",
+      "descriptionLength": 162,
+      "canonical": "https://www.minorgroup.site/blog/custom-dashboard-vs-power-bi"
+    },
+    {
+      "path": "/blog/automated-business-reporting",
+      "status": 200,
+      "staticContent": true,
+      "title": "Automated Business Reporting: A Practical Setup Guide",
+      "descriptionLength": 153,
+      "canonical": "https://www.minorgroup.site/blog/automated-business-reporting"
     },
     {
       "path": "/blog/custom-software-development-usa-guide",
@@ -86,7 +118,7 @@
       "staticContent": true,
       "title": "Custom Software Development for US Businesses | Minor Group",
       "descriptionLength": 143,
-      "canonical": "https://minorgroup.site/blog/custom-software-development-usa-guide"
+      "canonical": "https://www.minorgroup.site/blog/custom-software-development-usa-guide"
     },
     {
       "path": "/blog/business-website-development-usa-guide",
@@ -94,7 +126,7 @@
       "staticContent": true,
       "title": "Business Website Development in the USA: Planning Guide",
       "descriptionLength": 152,
-      "canonical": "https://minorgroup.site/blog/business-website-development-usa-guide"
+      "canonical": "https://www.minorgroup.site/blog/business-website-development-usa-guide"
     },
     {
       "path": "/privacy",
@@ -102,7 +134,7 @@
       "staticContent": true,
       "title": "Privacy Policy | Minor Group of Technologies",
       "descriptionLength": 142,
-      "canonical": "https://minorgroup.site/privacy"
+      "canonical": "https://www.minorgroup.site/privacy"
     },
     {
       "path": "/terms",
@@ -110,7 +142,7 @@
       "staticContent": true,
       "title": "Terms of Service | Minor Group of Technologies",
       "descriptionLength": 146,
-      "canonical": "https://minorgroup.site/terms"
+      "canonical": "https://www.minorgroup.site/terms"
     },
     {
       "path": "/cookies",
@@ -118,7 +150,7 @@
       "staticContent": true,
       "title": "Cookie Policy | Minor Group of Technologies",
       "descriptionLength": 145,
-      "canonical": "https://minorgroup.site/cookies"
+      "canonical": "https://www.minorgroup.site/cookies"
     },
     {
       "path": "/disclaimer",
@@ -126,7 +158,7 @@
       "staticContent": true,
       "title": "Website & Services Disclaimer | Minor Group",
       "descriptionLength": 149,
-      "canonical": "https://minorgroup.site/disclaimer"
+      "canonical": "https://www.minorgroup.site/disclaimer"
     },
     {
       "path": "/refund",
@@ -134,7 +166,7 @@
       "staticContent": true,
       "title": "Refund & Cancellation Policy | Minor Group",
       "descriptionLength": 149,
-      "canonical": "https://minorgroup.site/refund"
+      "canonical": "https://www.minorgroup.site/refund"
     },
     {
       "path": "/legal",
@@ -142,7 +174,7 @@
       "staticContent": true,
       "title": "Legal Policies & Terms | Minor Group of Technologies",
       "descriptionLength": 150,
-      "canonical": "https://minorgroup.site/legal"
+      "canonical": "https://www.minorgroup.site/legal"
     }
   ],
   "hydrationErrors": [],
