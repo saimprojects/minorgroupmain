@@ -3,7 +3,11 @@ import { posts } from '../data/blog.js'
 export const siteUrl = 'https://www.minorgroup.site'
 export const siteName = 'Minor Group of Technologies'
 
-const logoUrl = `${siteUrl}/brand/minor-group-logo-porcelain.png`
+const logo = {
+  url: `${siteUrl}/brand/apple-touch-icon.png`,
+  width: 256,
+  height: 256,
+}
 const socialImage = { url: siteUrl + '/brand/social-card.png', width: 1200, height: 630, alt: 'Minor Group of Technologies: SaaS, websites and business systems' }
 
 // These records are shared by the browser, prerendered pages and sitemap generation.
@@ -145,7 +149,7 @@ export function getStructuredData(pathname = '/') {
     {
       '@type': 'Organization', '@id': organizationId,
       name: siteName, url: `${siteUrl}/`,
-      logo: { '@type': 'ImageObject', '@id': `${siteUrl}/#logo`, url: logoUrl, contentUrl: logoUrl, width: 2172, height: 724, caption: siteName },
+      logo: { '@type': 'ImageObject', '@id': `${siteUrl}/#logo`, ...logo, contentUrl: logo.url, caption: siteName },
       description: 'Software development company building SaaS products, business management systems, websites and workflow automation.',
       email: company.email, telephone: company.phone,
       address: { '@type': 'PostalAddress', addressCountry: 'PK' },
